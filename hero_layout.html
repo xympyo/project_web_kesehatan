@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Layout Copy</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hero_layout.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="position-relative" id="btn-container">
+            <img src="./assets/assets/hamburger_bar.svg" alt="Hamburger Bar" class="img-fluid btn" style="width: 5%;"
+                onclick="show_bar()">
+            <div class="information">
+                <img style="position: absolute; left: 1rem; top: 4rem;" src="./assets/assets/nav_line.svg" alt="">
+                <p class="poppins-semibold primary" style="position: absolute; left: 1rem; top: 16.5rem;">Apa sih
+                    isinya?
+            </div>
+            </p>
+        </div>
+        <div class="hero-section d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 d-flex flex-column">
+                    <img src="./assets/illustration/hero_section 1.png" alt="Bab I Hero" class="img-fluid">
+                    <h3 class="text-center poppins-bold primary">ASUHAN KEBIDANAN
+                        KOMPLEMENTER NIFAS</h3>
+                    <h6 class="text-center poppins-light primary">MUTMAINNAH., S.ST., M. Keb
+                        <br />MUSNI., SKM., M. Kes
+                    </h6>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Container -->
+    <div class="bgs-primary position-absolute" id="navbar-container"
+        style="width: 70vh; height: fit-content; top: 0; left: 0; border-radius: 0rem 1rem 1rem 0rem;">
+        <div class="container">
+            <div class="row-gap-5">
+                <img src="./assets/assets/back_button.svg" alt="Hamburger Bar" class="img-fluid btn"
+                    onclick="hide_bar()">
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="label mt-3">
+                        <h5 class="triary poppins-semibold">Halaman Utama</h5>
+                    </div>
+                    <div class="navbar mt-3">
+                        <a href="" class="mt-3 navbtn">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="triary poppins-semibold">Bab I</h5>
+                                    <h6 class="poppins-extralight">Konsep Dasar Asuhan Kebidanan Komplementer
+                                        Pada
+                                        Masa Nifas</h6>
+                                </div>
+                                <div class="col-4">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="mt-3 navbtn">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="triary poppins-semibold">Bab II</h5>
+                                    <h6 class="poppins-extralight">Aspek Legal Pelayanan Kebidanan
+                                        Komplementer</h6>
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                        </a>
+                        <a href="" class="mt-3 navbtn">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="triary poppins-semibold">Bab III</h5>
+                                    <h6 class="poppins-extralight">Terapi Komplementer Aromaterapi Pada Masa
+                                        Nifas</h6>
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                        </a>
+                        <a href="" class="mt-3 navbtn">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="triary poppins-semibold">Bab IV</h5>
+                                    <h6 class="poppins-extralight">Terapi Komplementer Pijat Laktasi Pada Masa
+                                        Nifas</h6>
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                        </a>
+                        <a href="" class="mt-3 navbtn">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="triary poppins-semibold">Bab V</h5>
+                                    <h6 class="poppins-extralight">Terapi Komplementer Yoga Pada Masa Nifas
+                                    </h6>
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                        </a>
+                        <a href="" class="mt-3 navbtn">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="triary poppins-semibold">Bab VI</h5>
+                                    <h6 class="poppins-extralight">Terapi Komplementer Herbal Pada Masa Nifas
+                                    </h6>
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                        </a>
+                        <a href="" class="mt-3 navbtn">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="triary poppins-semibold">Daftar Pustaka</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        hide_bar = () => {
+            navbarContainer = document.getElementById("navbar-container");
+            let currentDisplay = getComputedStyle(navbarContainer).display;
+
+            if (currentDisplay === "none") {
+                navbarContainer.style.display = "block";
+            } else {
+                navbarContainer.style.display = "none";
+                show_bar();
+            }
+        }
+
+        show_bar = () => {
+            button = document.getElementById("btn-container");
+            let currentDisplay = getComputedStyle(button).display;
+
+            if (currentDisplay === "block") {
+                button.style.display = "none";
+                hide_bar();
+            } else {
+                button.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
