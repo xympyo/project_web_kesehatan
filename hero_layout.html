@@ -17,17 +17,20 @@
 
 <body>
     <div class="container mt-2">
-        <div class="position-relative" id="btn-container">
-            <img src="./assets/assets/hamburger_bar.svg" alt="Hamburger Bar" class="img-fluid btn" style="width: 5%;"
-                onclick="show_bar()">
-            <div class="information">
-                <img style="position: absolute; left: 1rem; top: 4rem;" src="./assets/assets/nav_line.svg" alt="">
-                <p class="poppins-semibold primary" style="position: absolute; left: 1rem; top: 16.5rem;">Apa sih
-                    isinya?
+        <div class="btn-container position-absolute" style="left: 1rem; top: 1rem;">
+            <div class="position-relative" id="btn-container">
+                <div class="row-gap-5">
+                    <img src="./assets/assets/hamburger_bar.svg" alt="Hamburger Bar" class=" img-fluid btn"
+                        onclick="show_bar()">
+                </div>
+                <div class="information position-absolute" style="left: 1rem;">
+                    <img src="./assets/assets/nav_line.svg" alt="">
+                    <p class="poppins-semibold primary">Apa sih isinya?</p>
+                </div>
             </div>
-            </p>
         </div>
-        <div class="hero-section d-flex justify-content-center align-items-center">
+
+        <div class=" hero-section d-flex justify-content-center align-items-center">
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-6 d-flex flex-column">
@@ -133,29 +136,31 @@
     </div>
 
     <script>
-        hide_bar = () => {
-            navbarContainer = document.getElementById("navbar-container");
-            let currentDisplay = getComputedStyle(navbarContainer).display;
+        const hide_bar = () => {
+            const navbarContainer = document.getElementById("navbar-container");
+            const body = document.body;
 
-            if (currentDisplay === "none") {
-                navbarContainer.style.display = "block";
-            } else {
+            if (navbarContainer.style.display === "block") {
                 navbarContainer.style.display = "none";
+                body.classList.remove("no-scroll");
                 show_bar();
+            } else {
+                navbarContainer.style.display = "block";
+                body.classList.add("no-scroll");
             }
-        }
+        };
 
-        show_bar = () => {
-            button = document.getElementById("btn-container");
-            let currentDisplay = getComputedStyle(button).display;
+        const show_bar = () => {
+            const button = document.getElementById("btn-container");
 
-            if (currentDisplay === "block") {
+            if (button.style.display === "block") {
                 button.style.display = "none";
                 hide_bar();
             } else {
                 button.style.display = "block";
             }
-        }
+        };
+
     </script>
 </body>
 

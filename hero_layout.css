@@ -6,8 +6,7 @@ body {
 }
 
 body {
-  height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .navbtn {
@@ -18,13 +17,47 @@ body {
   color: white;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
 #navbar-container {
   display: none;
+  max-height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 #btn-container {
   display: block;
 }
 
+.add-anim-right {
+  animation: goRight 1s ease-out;
+}
+.add-anim-left {
+  animation: goLeft 1s ease-out;
+}
+
+@keyframes goLeft {
+  from {
+    transform: translateX(0rem);
+  }
+  to {
+    transform: translateX(-12rem);
+  }
+}
+@keyframes goRight {
+  from {
+    transform: translateX(-12rem);
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
+
 .btn {
   cursor: pointer;
+}
+
+.hero-section {
+  height: 100vh;
 }
