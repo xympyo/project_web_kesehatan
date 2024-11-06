@@ -5,10 +5,6 @@ body {
   padding: 0;
 }
 
-body {
-  overflow: hidden;
-}
-
 .navbtn {
   color: #1f2b24;
   transition: 0.5s ease-out;
@@ -60,4 +56,11 @@ body {
 
 .hero-section {
   height: 100vh;
+}
+
+.flipbook-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
