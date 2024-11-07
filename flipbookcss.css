@@ -9,6 +9,7 @@ li {
   color: #ffffff;
 }
 
+/* Font Choice */
 .title {
   font-size: 1rem;
   text-align: justify;
@@ -20,6 +21,7 @@ li {
   color: #ffffff;
 }
 
+/* Evaluation Container choice */
 .answer {
   font-size: 0.75rem;
   text-align: justify;
@@ -31,4 +33,21 @@ li {
   padding: 1.25rem;
   border-radius: 0.75rem;
   margin-top: 0.5rem;
+}
+
+/* Table Choice */
+
+table,
+tr,
+th,
+td {
+  border: 1px solid #27ae60;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.table-color {
+  font-size: 0.75rem;
+  color: #27ae60;
 }
