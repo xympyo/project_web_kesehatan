@@ -70,7 +70,7 @@
                 <div class="col-3"></div>
             </div>
         </div>
-        
+
         <div class="flipbook-section container">
             <div id="magazine">
                 <div>
@@ -312,7 +312,9 @@
             <div class="row">
                 <div class="container">
                     <div class="label mt-3">
-                        <h5 class="triary poppins-semibold">Halaman Utama</h5>
+                        <a href="index.html">
+                            <h5 class="triary poppins-semibold">Halaman Utama</h5>
+                        </a>
                     </div>
                     <div class="navbar mt-3">
                         <a href="bab1.html" class="mt-3 navbtn">
@@ -394,27 +396,34 @@
         const hide_bar = () => {
             const navbarContainer = document.getElementById("navbar-container");
             const body = document.body;
+            const navbarDisplay = window.getComputedStyle(navbarContainer).display;
 
-            if (navbarContainer.style.display === "block") {
+            if (navbarDisplay === "block") {
                 navbarContainer.style.display = "none";
                 body.classList.remove("no-scroll");
                 show_bar();
+                console.log("Navbar hidden, scrolling enabled");
             } else {
                 navbarContainer.style.display = "block";
                 body.classList.add("no-scroll");
+                console.log("Navbar shown, scrolling disabled");
             }
         };
 
         const show_bar = () => {
             const button = document.getElementById("btn-container");
+            const buttonDisplay = window.getComputedStyle(button).display;
 
-            if (button.style.display === "block") {
+            if (buttonDisplay === "block") {
                 button.style.display = "none";
                 hide_bar();
+                console.log("Button hidden");
             } else {
                 button.style.display = "block";
+                console.log("Button shown");
             }
         };
+
     </script>
     <!-- Copy these belolw -->
     <script type="text/javascript">
