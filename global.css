@@ -10,6 +10,17 @@ a {
   color: inherit;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  text-align: justify;
+}
+
 .poppins-thin {
   font-family: "Poppins", serif;
   font-weight: 100;
