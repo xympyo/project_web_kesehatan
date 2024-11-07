@@ -8,11 +8,38 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="hero_layout.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="flipbookcss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Copy This Below -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
+    <style type="text/css">
+        /* Copy all of this below */
+        #magazine {
+            background: rgb(39, 174, 96);
+            background: linear-gradient(90deg, rgba(39, 174, 96, 1) 0%, rgba(39, 174, 163, 1) 50%, rgba(50, 174, 39, 1) 100%);
+            height: 75vh;
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.50);
+        }
+
+        #magazine .turn-page {
+            background-color: #ffffff;
+            box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+
+        .page-even {
+            box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+
+        .page-odd {
+            box-shadow: -80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,16 +61,158 @@
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-6 d-flex flex-column">
-                    <img src="./assets/illustration/bab4_hero 1.png" alt="Bab I Hero" class="img-fluid">
+                    <img src="./assets/illustration/hero_section 1.png" alt="Bab I Hero" class="img-fluid">
                     <h3 class="text-center poppins-bold primary">BAB IV</h3>
                     <h6 class="text-center poppins-light primary">TERAPI KOMPLEMENTER PIJAT LAKTASI PADA MASA NIFAS</h6>
                 </div>
                 <div class="col-3"></div>
             </div>
         </div>
-    </div>
+        <div class="flipbook-section container">
+            <div id="magazine">
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">A. Aromaterapi Lavender pada Masa Nifas</h5>
+                        <p class="desc secondary poppins-regular">Aromaterapi merupakan salah satu pengobatan komplementer yang menggunakan minyak esensial sebagai agen terapi utama. Minyak esensial diperoleh dari hasil ekstraksi bunga, daun, batang, buah, akar, dan juga dari resin. Minyak esensial sebagai aromaterapi digunakan melalui inhalasi dan atau rute topical (Sundara et al. 2022). Proses inhalasi yang memungkinkan molekul untuk dihirup dan merangsang sistem limbik yang mana adalah pusat pengendalian emosi. Selain itu aromaterapi mampu mempengaruhi sistem saraf endokrin dan otonom yang dapat mengurangi kecemasan (Irawati dan Xanda 2021).</p>  
+                    </div>
+                    <div class="container d-flex flex-column">
+                            <img src="assets/illustration/bab3_hero 1.png" class="img-fluid" style="width: min-content;"
+                            alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">B. Manfaat</h5>
+                        <ol class="title secondary poppins-regular" type="1">
+                            <div class="row">
+                                <div class="col-6">
+                                    <li class="poppins-regular">Menenangkan pikiran</li>
+                                    <li class="poppins-regular">Relaksasi tubuh</li>
+                                    <li class="poppins-regular">Menormalkan aliran darah</li>
+                                    <li class="poppins-regular">Meningkatkan suplay ASI</li>
+                                    <li class="poppins-regular">Dilakukan pada ibu yang ingin relaksasi dan mencegah sumbatan pada saluran asi</li>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">C. Kontra Diksi</h5>
+                        <ol type="a" class="title secondary poppins-bold">
+                            <li class="title secondary poppins-bold"> <b>Kontradiksi</b>
+                              <ol type="a" class="title secondary poppins-bold">
+                                <li>Ibu dengan luka kulit/infeksi</li>
+                                <li>Ibu dengan riwayat penyakit hepatitis, HIV dan Ca Mammae, eklamsi dan tumor</li>
+                                <li>Ibu yang tidak suka dipijat (Helina Siska 2021)</li>
+                              </ol>      
+                            </li>
+                            <li class="title secondary poppins-bold"><b>indikasi</b>
+                              <ol type="a" class="title secondary poppins-bold">
+                                <li>Ibu yang mempunyai bayi</li>
+                                <li>Ibu yang memiliki masalah asi tidak lancar</li>
+                                <li>Ibu yang ingin relaktasi (Sari, Harahap, dan Helina Siska 2021)</li>
+                              </ol>
+                            </li>
+                        </ol>    
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">D. Evidence Based Pijat Laktasi</h5>
+                        <P class="desc secondary poppins-regular"> Dari hasil sintesa literature review yang dilakukan oleh Ria Aggraini terhadap 7 jurnal di dapatkan hasl peningkatan produksi ASI yang signifikan ditemukan pada semua artikel, semua artikel (100%) menunjukkan peningkatan produksi ASI yang signifikan pada ibu nifas yang dilakukan intervensi pijat laktasi. Artinya pijat laktasi efektif membantu meningkatkan produksi ASI (Anggraini 2022). Jurnal ini dapat di akses pada link <a href=" https://jurnal.poltekkespangkalpinang.ac.id/index.php/jkp/article/download/451/pdf"></a></P>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">E. SOP
+                        </h5>
+                        <p class="desc secondary poppins-regular"> Dari hasil sintesa literature review yang dilakukan oleh Ria Aggraini terhadap 7 jurnal di dapatkan hasl peningkatan produksi ASI yang signifikan ditemukan pada semua artikel, semua artikel (100%) menunjukkan peningkatan produksi ASI yang signifikan pada ibu nifas yang dilakukan intervensi pijat laktasi. Artinya pijat laktasi efektif membantu meningkatkan produksi ASI (Anggraini 2022). Jurnal ini dapat di akses pada link <a href=" https://jurnal.poltekkespangkalpinang.ac.id/index.php/jkp/article/download/451/pdf "> click here</a>
+                        </p>
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
 
-    
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">F. Video Edukasi Pijat Laktasi</h5>
+                        <div class="eval-container">
+                            <p><a href="https://www.youtube.com/watch?v=LLHurpX-50U&feature=youtu.be">click here</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">G. Evaluasi</h5>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="container d-flex flex-column">
+                        <div class="eval-container">
+                            <h5 class="question secondary poppins-medium">Dibawah ini merupakan manfaat dari pijat laktasi bagi ibu nifas kecuali?</h5>
+                            <ol type="a">
+                                <li>
+                                    <p class="answer secondary poppins-light">a. Memberikan efek rileksasi
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light"> b. Meningkatkan tekanan darah</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light"> c. Meningkatkan suplay ASI
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">d. Menenangkan fikiran</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="eval-container">
+                            <h5 class="question secondary poppins-medium">Di bawah ini manakah yang tiak termasuk kontraindikasi pijat laktasi
+                            </h5>
+                            <ol type="a">
+                                <li>
+                                    <p class="answer secondary poppins-light">Ibu dengan luka kulit/ infeksi</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Ibu dengan CA Mammae</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Ibu yang ingin relaktasi</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Ibu yang tidak suka di pijat.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="eval-container">
+                        <h5 class="question secondary poppins-medium">Manakah pernyataan yang benar terhadap pengertian Pijat laktasi?
+                        </h5>
+                        <ol type="a">
+                            <li>
+                                <p class="answer secondary poppins-light">Pijat laktasi merupakan pemijatan yang di lakukan pada daerah payudara saja</p>
+                            </li>
+                            <li>
+                                <p class="answer secondary poppins-light">Pijat laktasi merupakan pemijatan yang dilakukan pada beberapa bagian tubuh seperti kepala, leher, bahu punggung dan payudara</p>
+                            </li>
+                            <li>
+                                <p class="answer secondary poppins-light">Pijat laktasi merupakan pemijatan yang di lakuka pada daerah leher hingga payudara
+                                </p>
+                            </li>
+                            <li>
+                                <p class="answer secondary poppins-light">Pijat laktasi merupakan tehnik pemijatan yang dilakukan pada daerah betis untuk meningkatkan produksi ASI</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Navbar Container -->
     <div class="bgs-primary position-absolute" id="navbar-container"
@@ -159,6 +328,33 @@
                 button.style.display = "block";
             }
         };
+    </script>
+    <!-- Copy these belolw -->
+    <script type="text/javascript">
+
+        $(window).ready(function () {
+            $('#magazine').turn({
+                display: 'double',
+                acceleration: true,
+                gradients: !$.isTouch,
+                elevation: 50,
+                when: {
+                    turned: function (e, page) {
+                        console.log('Current view: ', $(this).turn('view'));
+                    }
+                }
+            });
+        });
+
+
+        $(window).bind('keydown', function (e) {
+
+            if (e.keyCode == 37)
+                $('#magazine').turn('previous');
+            else if (e.keyCode == 39)
+                $('#magazine').turn('next');
+
+        });
 
     </script>
 </body>
