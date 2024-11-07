@@ -8,11 +8,38 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="hero_layout.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="flipbookcss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Copy This Below -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
+    <style type="text/css">
+        /* Copy all of this below */
+        #magazine {
+            background: rgb(39, 174, 96);
+            background: linear-gradient(90deg, rgba(39, 174, 96, 1) 0%, rgba(39, 174, 163, 1) 50%, rgba(50, 174, 39, 1) 100%);
+            height: 75vh;
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.50);
+        }
+
+        #magazine .turn-page {
+            background-color: #ffffff;
+            box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+
+        .page-even {
+            box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+
+        .page-odd {
+            box-shadow: -80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,17 +61,51 @@
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-6 d-flex flex-column">
-                    <img src="./assets/illustration/bab7_hero.png" alt="Bab I Hero" class="img-fluid">
-                    <h3 class="text-center poppins-bold primary">DAFTAR PUSTAKA</h3>
+                    <img src="./assets/illustration/hero_section 1.png" alt="Bab I Hero" class="img-fluid">
+                    <h3 class="text-center poppins-bold primary">Daftar Pustaka</h3>
                 </div>
                 <div class="col-3"></div>
             </div>
         </div>
-    </div>
-
-    <div class="flipbook-section container">
-        <div id="magazine">
-            <p>p</p>
+        
+        <div class="flipbook-section container">
+            <div id="magazine">
+                <div>
+                    <div class="container d-flex flex-column">
+                        <p class="desc secondary poppins-regular">ndira, Dwi Ayu, dan Jatie K. Pudjibudojo. 2020. “Pengobatan Alternatif Sebagai Upaya Penyembuhan Penyakit.” Insight: Jurnal Pemikiran dan Penelitian Psikologi 16(2):393–401. doi: 10.32528/ins.v16i2.2053.</p>
+                        <p class="desc secondary poppins-regular"> Anggraeni, N., L. Yanti, P. I. Pratiwi, F. H. N. Adriyani, I. D. A. A. Darmawati, N. N. Silfia, N. W. Utami, E. Ernawati, S. Rini, S. Surtiningsih, dan others. 2024. BUKU AJAR ASUHAN KEBIDANAN KOMPLEMENTER. diedit oleh Efitra. PT. Sonpedia Publishing Indonesia.</p>
+                        <p class="desc secondary poppins-regular">Anggraini, Ria. 2022. “Tinjauan Literatur : Manfaat Pijat Laktasi untuk Meningkatkan Produksi ASI Literature Review : Benefits of Lactation Massage to Increasing Breast Milk Production.” JURNAL KESEHATAN POLTEKKES KEMENKES RI PANGKALPINANG 10(1):67–74.</p>
+                        <p class="desc secondary poppins-regular">Ariyanti, Kadek Sri, Siti Zakiah, Cokorda Istri Mita Pemayun, dan I. Nyoman Dharma Wisnawa. 2023. “Manfaat Pranayama Yoga Untuk Mengurangi Kecemasan Pada Ibu Nifas di PMB Jaba Denpasar.” Jurnal Yoga dan Kesehatan 6(1):42–53. doi: 10.25078/jyk.v6i1.2393.</p>
+                        <p class="desc secondary poppins-regular"> Asazawa, Kyoko, Yoshihiro Kato, Atsuko Yamaguchi, dan Asako Inoue. 2017. “The effect of aromatherapy treatment on fatigue and relaxation for mothers during the early puerperal period in Japan: A pilot study.” International Journal of Community Based Nursing and Midwifery 5(4):365–75.</p>
+                        <p class="desc secondary poppins-regular">Cassandra N. Ramar; Elsa S. Vadakekut; W R. Grimes. 2024. Perineal Lacerations. Treassure Islnad: StatPearls.
+                            Deni Maryani, Dara Himalaya. 2020. “EFEK AROMA TERAPI LAVENDER MENGURANGI NYERI NIFAS.” Journal of Midwifery 8(1):11–16.</p>
+                        <p class="desc secondary poppins-regular">Dwijayanti, Renny, Dainty Maternity, dan Devi Kurniasari. 2024. “Efektivitas penggunaan lidah buaya (aloevera) terhadap penyembuhan luka perineum pada ibu nifas.” Midwifery Journal 4(1):5–12. doi: 10.33024/mj.v4i1.14571.
+                        Fitria, Ayunigtyas Ika. 2024. Kebidanan Komplementer. 1 ed. Yogyakarta: Pustaka Baru Press.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <p class="desc secondary poppins-regular">Hayati, Fatihatul. 2021. “Pendidikan Kesehatan tentang Terapi Komplementer dalam Kehamilan.” Jurnal Abdimas Kesehatan (JAK) 3(2):120. doi: 10.36565/jak.v3i2.167.
+                        Helina Siska, Yanti. 2021. “PENDIDIKAN KELAS PRENATAL DALAM PERSIAPAN MENYUSUI DI BPM SITI JULEHA S.Tr.Keb.” EBIMA : Jurnal Edukasi Bidan Di Masyarakat 1(1):26–33. doi: 10.36929/ebima.v1i1.273.
+                        </p>
+                        <p class="desc secondary poppins-regular">Hidayat, Sthepani Sari. 2024. “Terapi Komplementer Terhadap Kesehatan Mental Ibu Nifas Di Klinik Pratama Medical Center.” Jurnal Ilmu Kesehatan Umum 2(2).Irawati, Nur Bebi Ulfah, dan Adhesty Novita Xanda. 2021. “Ginger Aromatherapy (Zingiber Officinale) Against Post Partum Pain.” JKM (Jurnal Kebidanan Malahayati) 8(1):25–31. doi: 10.33024/jkm.v8i1.5358.</p>
+                        <p class="desc secondary poppins-regular">Katmini, Katmini, dan Nazilatul Maulinda Sholichah. 2020. “Lactation Massage for Increasing Breast Milk Production in Postpartum Mothers.” Journal for Quality in Public Health 4(1):104–13. doi: 10.30994/jqph.v4i1.168</p>
+                        <p class="desc secondary poppins-regular">Marlinda Dewi Arum Sari , Kusumastuti, Hastin Ika Indriyastuti. 2021. “Application Of Postpartum Yoga for Accelerating the Decrease of Uterine Involution.” Hal. 1058–63 in Repository.Urecol.Org.</p>
+                        <p class="decs secondary poppins-regular">Martin, Jennifer H., dan Joanne Patel. 2022. “Complementary and alternative therapies in the palliative setting.” Internal Medicine Journal 52(10):1677–84. doi: 10.1111/imj.15922.</p>
+                        <p class="desc secondary poppins-regular">Mayasar Senditya Indah, Yuli yanik, Nicky Danur Jayanti. 2022. “Poltekita : Jurnal Pengabdian Masyarakat.” Poltekkita: Jurnal Pengabdian Masyarakat 3:676–86. doi: 10.33860/pjpm.v3i4.1070.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <p class="desc secondary poppins-regular">Manfaat Asuhan komplementer diberikan pada masa nifas
+                            untuk mencegah terjadinya masalah atau
+                            komplikasi yang sering terjadi pada masa nifas (Mayasar Senditya Indah, Yuli Yanik 2022).
+                            Menurut (Aurellia, 2023) Beberapa manfaat terapi kompelmenter untuk meningkatkan kesehatan
+                            dan
+                            kesejahteraan yaitu:</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -162,6 +223,33 @@
                 button.style.display = "block";
             }
         };
+    </script>
+    <!-- Copy these belolw -->
+    <script type="text/javascript">
+
+        $(window).ready(function () {
+            $('#magazine').turn({
+                display: 'double',
+                acceleration: true,
+                gradients: !$.isTouch,
+                elevation: 50,
+                when: {
+                    turned: function (e, page) {
+                        console.log('Current view: ', $(this).turn('view'));
+                    }
+                }
+            });
+        });
+
+
+        $(window).bind('keydown', function (e) {
+
+            if (e.keyCode == 37)
+                $('#magazine').turn('previous');
+            else if (e.keyCode == 39)
+                $('#magazine').turn('next');
+
+        });
 
     </script>
 </body>
