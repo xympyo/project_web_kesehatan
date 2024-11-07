@@ -8,11 +8,38 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="hero_layout.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="flipbookcss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Copy This Below -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
+    <style type="text/css">
+        /* Copy all of this below */
+        #magazine {
+            background: rgb(39, 174, 96);
+            background: linear-gradient(90deg, rgba(39, 174, 96, 1) 0%, rgba(39, 174, 163, 1) 50%, rgba(50, 174, 39, 1) 100%);
+            height: 75vh;
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.50);
+        }
+
+        #magazine .turn-page {
+            background-color: #ffffff;
+            box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+
+        .page-even {
+            box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+
+        .page-odd {
+            box-shadow: -80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,11 +61,165 @@
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-6 d-flex flex-column">
-                    <img src="./assets/illustration/bab5_hero.png" alt="Bab I Hero" class="img-fluid">
+                    <img src="./assets/illustration/hero_section 1.png" alt="Bab I Hero" class="img-fluid">
                     <h3 class="text-center poppins-bold primary">BAB V</h3>
                     <h6 class="text-center poppins-light primary">TERAPI KOMPLEMENTER YOGA PADA MASA NIFAS</h6>
                 </div>
                 <div class="col-3"></div>
+            </div>
+        </div>
+        <div class="flipbook-section container">
+            <div id="magazine">
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">A. Yoga pada ibu nifas</h5>
+                        <p class="desc secondary poppins-regular">
+                            Menurut Sindhu., Pujiastuti, 2018 Postnatal yoga adalah metode self help untuk seorang ibu selalu terhubung dengan dirinya, kesadarannya, fitrahnya, baik pada saat merasa berenergi dan penuh semangat, juga saat lelah atau tertekan. Yoga dapat membantu menurunkan tingkat stress, emosi dan meningkatkan stamina. Hal terpenting dalam berlatih yoga, yaitu teknik pernapasan, menyelaraskan napas dapat memberikan oksigen pada seluruh tubuh yang memberikan efek ketenangan pikiran (Sophia, Fitri Nurhayati, Flora Honey Darmawan 2022).</p>  
+                    </div>
+                    <div class="container d-flex flex-column">
+                            <img src="assets/illustration/bab5_yoga 1.png" class="img-fluid" style="width: min-content;"
+                            alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">B. Manfaat</h5>
+                        <ol class="title secondary poppins-regular" type="1">
+                            <div class="row">
+                                <div class="col-6">
+                                    <li class="poppins-regular">Mengurangi rasa nyeri secara fisik</li>
+                                    <li class="poppins-regular">Indikasi</li>
+                                    <li class="poppins-regular"> Membantu proses penyembuhan dari sakit dan membantu meningkatkan kualitas hidup (Woodyard, 2011 dalam (Winarni, Ikhlasia, dan Sartika 2020)</li>
+                                    <li class="poppins-regular">Mempercepat proses penurunan fundus dan lochea</li>
+                                    <li class="poppins-regular">Melancarkan sirkulasi darah ke rahim</li>
+                                    <li class="poppins-regular">Uterus berkontraksi dengan baik</li>
+                                    <li class="poppins-regular">Mencegah perdarahan (Mu'alimah et al. 2022)</li>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">C. Kontra Diksi</h5>
+                        <ol type="a" class="title secondary poppins-bold">
+                            <li class="title secondary poppins-bold"> <b>Kontradiksi</b>
+                              <ol type="a" class="title secondary poppins-regular">
+                                <li class="title secondary poppins-bold">Ibu nifas yang mengalami komplikasi selama persalinan</li>
+                                <li class="title secondary poppins-bold">Ibu yang mengalami tanda - tanda bahaya selama nifas</li>
+                                <li class="title secondary poppins-bold">Ibu yang mengalami kelainan ginjal, jantung dan paru - paru</li>
+                              </ol>      
+                            </li>
+                            <li class="title secondary poppins-bold"><b>indikasi</b>
+                              <ol type="a" class="title secondary poppins-regular">
+                                <li class="title secondary poppins-bold">Ibu nifas hari ke 7</li>
+                                <li class="title secondary poppins-bold">Ibu yang melahirkan secara spontan ataupun sectio caesarea tanpa adanya komplikasi (Rahyani N.K.Y., Ni Gusti Made Ayu Agung Budhi 2024)</li>
+                              </ol>
+                            </li>
+                        </ol>    
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">D. Evidence Based</h5>
+                        <P class="desc secondary poppins-regular"> Menurut penelitian yang dilakukan oleh Kadek Sri Ariyanti., et.al, 2023, Yoga post natal sangat baik dilakukan untuk mengurangi kecemasan ibu pasca melahirkan karena memberikan beberapa manfaat diantaranya:</P>
+                            <ol type="1" class="desc secondary poppins-regular">
+                                <li class="desc secondary poppins-regular">mengurangi ketegangan otot bahu dan leher</li>
+                                <li class="desc secondary poppins-regular">Menenangkan pikiran dan mengurangi stress</li>
+                                <li class="desc secondary poppins-regular">Meningkatkan kualitas tidur</li>
+                                <li class="desc secondary poppins-regular">Menenangkan produksi asi</li>
+                            </ol>
+                        <p class="desc secondary poppins-regular">  Penatalaksanaan yoga post natal pada ibu pasca melahirkan sebaiknya diberikan sebagai salah satu upaya untuk meningkatkan kesehatan fisik dan psikologis ibu, meningkatkan produksi ASI, sehingga dapat meningkatkan derajat kesehatan ibu dan bayi (Ariyanti et al. 2023). Jurnal ini dapat di akses pada link  <a href="  https://ojs.uhnsugriwa.ac.id/index.php/JYK/article/view/2393"> click here</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">E.SOP
+                        </h5>
+                        
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">F. Video Edukasi Pijat Laktasi</h5>
+                        <div class="desc secondary poppins-regular">
+                            <p><a href="https://www.youtube.com/watch?v=LLHurpX-50U&feature=youtu.be">click here</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">G. Evaluasi</h5>
+                    </div>
+                    <div>
+                    <div class="container d-flex flex-column">
+                        <div class="eval-container">
+                            <h5 class="question secondary poppins-medium">Dibawah ini manakah yang tidak termasuk kontraindikasi terapi yoga pada ibu nifas?</h5>
+                            <ol type="a">
+                                <li>
+                                    <p class="answer secondary poppins-light">Ibu nifas yang mengalami komplikasi selama persalinan
+                                    </p>     
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Ibu yang melahirkan secara spontan ataupun sectio caesarea tanpa adanya komplikas1</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light"> Ibu yang mengalami tanda-tanda bahaya selama nifas
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Ibu yang mengalami kelainan ginjal, jantung dan paru-paru.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    <div class="eval-container">
+                            <h5 class="question secondary poppins-medium">Lepasnya hormon endorphin saat melakukan yoga akan memberikan efek?
+                            </h5>
+                            <ol type="a">
+                                <li>
+                                    <p class="answer secondary poppins-light">Rasa cemas</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Penghilang nyeri</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Bahagia</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Anti bakteri</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>    
+                </div>
+                 </div>
+                 <div class="container d-flex flex-column">    
+                    <div class="eval-container">
+                        <h5 class="question secondary poppins-medium">Di bawah ini manfaat dari yoga pada masa nifas, kecuali?
+                        </h5>
+                        <ol type="a">
+                            <li>
+                                <p class="answer secondary poppins-light">Mempercepat proses penurunan fundus dan lochea
+                                    </p>
+                            </li>
+                            <li>
+                                <p class="answer secondary poppins-light">Melancarkan sirkulasi darah ke rahim</p>
+                            </li>
+                            <li>
+                                <p class="answer secondary poppins-light">Mencegah infeksi
+                                </p>
+                            </li>
+                            <li>
+                                <p class="answer secondary poppins-light">Mencegah perdarahan</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>
@@ -157,6 +338,33 @@
                 button.style.display = "block";
             }
         };
+    </script>
+    <!-- Copy these belolw -->
+    <script type="text/javascript">
+
+        $(window).ready(function () {
+            $('#magazine').turn({
+                display: 'double',
+                acceleration: true,
+                gradients: !$.isTouch,
+                elevation: 50,
+                when: {
+                    turned: function (e, page) {
+                        console.log('Current view: ', $(this).turn('view'));
+                    }
+                }
+            });
+        });
+
+
+        $(window).bind('keydown', function (e) {
+
+            if (e.keyCode == 37)
+                $('#magazine').turn('previous');
+            else if (e.keyCode == 39)
+                $('#magazine').turn('next');
+
+        });
 
     </script>
 </body>
