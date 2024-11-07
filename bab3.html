@@ -8,11 +8,38 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="hero_layout.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="flipbookcss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Copy This Below -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
+    <style type="text/css">
+        /* Copy all of this below */
+        #magazine {
+            background: rgb(39, 174, 96);
+            background: linear-gradient(90deg, rgba(39, 174, 96, 1) 0%, rgba(39, 174, 163, 1) 50%, rgba(50, 174, 39, 1) 100%);
+            height: 75vh;
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.50);
+        }
+
+        #magazine .turn-page {
+            background-color: #ffffff;
+            box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+
+        .page-even {
+            box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+
+        .page-odd {
+            box-shadow: -80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,11 +61,221 @@
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-6 d-flex flex-column">
-                    <img src="./assets/illustration/bab3_hero 1.png" alt="Bab I Hero" class="img-fluid">
+                    <img src="./assets/illustration/hero_section 1.png" alt="Bab I Hero" class="img-fluid">
                     <h3 class="text-center poppins-bold primary">BAB III</h3>
                     <h6 class="text-center poppins-light primary">TERAPI KOMPLEMENTER AROMATERAPI PADA MASA NIFAS</h6>
                 </div>
                 <div class="col-3"></div>
+            </div>
+        </div>
+        <div class="flipbook-section container">
+            <div id="magazine">
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">A. Aromaterapi Lavender pada Masa Nifas</h5>
+                        <p class="desc secondary poppins-regular">Aromaterapi merupakan salah satu pengobatan komplementer yang menggunakan minyak esensial sebagai agen terapi utama. Minyak esensial diperoleh dari hasil ekstraksi bunga, daun, batang, buah, akar, dan juga dari resin. Minyak esensial sebagai aromaterapi digunakan melalui inhalasi dan atau rute topical (Sundara et al. 2022). Proses inhalasi yang memungkinkan molekul untuk dihirup dan merangsang sistem limbik yang mana adalah pusat pengendalian emosi. Selain itu aromaterapi mampu mempengaruhi sistem saraf endokrin dan otonom yang dapat mengurangi kecemasan (Irawati dan Xanda 2021).</p>  
+                    </div>
+                    <div class="container d-flex flex-column">
+                            <img src="assets/illustration/bab3_hero 1.png" class="img-fluid" style="width: min-content;"
+                            alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">B. Manfaat</h5>
+                        <p class="desc secondary poppins-regular">Pengobatan menggunakan aromaterapi pada asuhan kebidanan dipercaya memiliki banyak manfaat bagi kesehatan ibu dan anak. Aromaterapi dalam asuhan kebidanan dapat digunakan pada ibu mulai masa hamil, bersalin, nifas, menyusui hingga bayinya untuk memberikan efek rileks pada tubuh dan pikiran. Salah satu manfaat aromaterapi bagi ibu pada masa nifas adalah:</p>
+                        <ol class="title secondary poppins-bold">
+                            <div class="row">
+                                <div class="col-6">
+                                    <li class="poppins-regular">Peningkatan Produksi ASI</li>
+                                    <p class="desc secondary poppins-regular" font color="black">Pemberian aromaterapi lavender dengan tehnik inhalasi berguna menstimulasi pengeluaran ASI. Saat menghirup aromaterapi lavender sistem saraf pusat akan meresponnya dan merangsang pengeluaran hormon oksitosin sehingga meningkatkan produksi ASI, sebab hormon oksitosin bertanggung jawab untuk meningkatkan produksi ASI(Selvin Yanti Hulu 2023)</p>
+                                    <li class="poppins-regular">Sebagai Antioksidan</li>
+                                    <p class="desc secondary poppins-regular" font color="black">Minyak esensial yang berasal dari ekstrak bunga lavender memiliki senyawa aktif yakni polifenol berfungsi sebagai antioksidan sehingga mampu menghambat masuknya radikal bebas pada tubuh, anti virus, anti kanker, dan penyakit jantung karna banyak mengandung linaly asetat dan linalool yang berfungsi merilekskan tubuh (Sinulingga dan Patriani 2023)</p>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">C. Kontra Diksi</h5>
+                        <ol type="a" class="title secondary poppins-bold">
+                            <li class="title secondary poppins-bold"> <b>Kontradiksi aromaterapi (Primadiati, Rahmi, 2005)</b>
+                              <ol type="a" class="title secondary poppins-bold">
+                                <li>Penderita Kanker</li>
+                                <li>Gangguan sirkulasi dan jantung (kecuali dibawah pengawasan aromatologist)</li>
+                                <li>Penyakit kulit</li>
+                                <li>Infeksi</li>
+                                <li>Peradangan</li>
+                                <li>Varises</li>
+                                <li>Fraktur</li>
+                                <li>Luka terbuka (Yosali dan Siswanti 2019)</li>
+                              </ol>      
+                            </li>
+                            <li class="title secondary poppins-bold"><b>indikasi</b>
+                              <ol type="a" class="title secondary poppins-bold">
+                                <li>Ibu lelah setelah bersalin</li>
+                                <li>Masalah sulit tidur</li>
+                                <li> Nyeri (Asazawa et al. 2017)</li>
+                              </ol>
+                            </li>
+                        </ol>    
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">D. Evidance Based Pemanfaatan Aromaterapi pada Masa Nifas</h5>
+                        <P class="desc secondary poppins-regular">Berdasarkan sintesis jurnal oleh Deni Maryani, Dara Himalaya, 2020 setelah di lakukan terhadap tujuh jurnal relevan dan penelitian yang penulis lakukan dapat disimpulkan setelah diberikan aromaterapi lavender terjadi pengurangan nyeri nifas ditandai dengan ibu merasa rileks, nyaman. Terdapat berbagai metode untuk mengurangi rasa nyeri nifas, aromaterapi lavender selain dapat mengurangi rasa nyeri nifas juga dapat mengurangi kecemasan dan mencegah depresi post partum (Deni Maryani 2020). Jurnal ini dapat diakses pada link <a href="https://jurnal.unived.ac.id/index.php/JM/article/view/1028">click here</a></P>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">E. Macam - macam teknik pemberian Aromaterapi
+                        </h5>
+                        <h8 class="title secondary poppins-bold">a. inhalasi</h8>
+                        <p class="desc secondary poppins-regular">Terapi komplementer dan terapi alternative kerap
+                            diartikan
+                            sama, padahal kedua terapi ini berbeda. Perbedaanya adalah terapi komplementer merupakan
+                            pengobatan yang dapat digunakan bersamaan/berdampingan dengan terapi konvensional (Medis)
+                            yang
+                            di resepkan oleh dokter. (Fitria 2024). Sedangkan pengobatan alternatif adalah pengobatan
+                            non
+                            medis dimana peralatan dan bahan yang digunakan tidak termasuk dalam standart pengobatan
+                            medis
+                            (Andira dan Pudjibudojo 2020). Pada terapi alternative kebanyakan tidak melalui pengujian
+                            ilmiah
+                            terlebih dahulu sehingga belum ada uji ilmiahya tidak aman untuk digunakan dan kemungkinan
+                            besar
+                            akan memberikan efek samping yang berbahaya Contoh terapi alternative : Gurah, pijat batu
+                            giok,
+                            jamu.</p>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="assets/photo/bab3/bab3_hero 1.png" class="img-fluid" alt="Gambar 1: Inhalasi Aromaterapi dengan Diffuser(Sumber: Mutmainnah 2024)">
+                            </div>
+                            <div class="row-8"><p class="desc secondary poppins-regular" style="font-size: small;" >Gambar 1: Inhalasi Aromaterapi dengan Diffuser(Sumber: Mutmainnah 2024)"</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                 <div class="row-8">
+                    <div class="container d-flex flex-column">
+                        <h8 class="title secondary poppins-bold">b. Aromaterapi Lilin</h8>
+                        <P class="desc secondary poppins-regular">
+                            Tehnik penggunaan terapi komplementer dengan menggunakan lilin aromaterapi sangat sederhana, memilih lilin aromaterapi sesuai yang di inginkan kemudian menyalakan lilin tersebut selama 30 menit diruangan tertutup sehingga wangi aromaterapi dari lilin akan menyebar keseluruh ruangan kemudian secara spontan aroma dari lilin tersbut akan terhirup. Bagi ibu hamil dianjurkan memilih lilin aromaterapi yang terbuat dari bahan alami contohnya soy wax dan palm wax (Sinulingga dan Patriani 2023).
+                        </P>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="assets/photo/bab3/image 2.png" class="img-fluid" alt="Gambar 2: Lilin Aromaterapi
+                                (Sumber: Berita 99.com)">
+                            </div>
+                            <div class="row-8"><p class="desc secondary poppins-regular" style="font-size: small;" >Gambar 2: Lilin Aromaterapi
+                                (Sumber: Berita 99.com)</p></div>
+                        </div>
+                    </div>
+                 </div>   
+                </div>
+
+                    <div class="row-8">
+                       <div class="container d-flex flex-column">
+                           <h8 class="title secondary poppins-bold">b. Aromaterapi Lilin</h8>
+                           <P class="desc secondary poppins-regular">
+                               Tehnik penggunaan terapi komplementer dengan menggunakan lilin aromaterapi sangat sederhana, memilih lilin aromaterapi sesuai yang di inginkan kemudian menyalakan lilin tersebut selama 30 menit diruangan tertutup sehingga wangi aromaterapi dari lilin akan menyebar keseluruh ruangan kemudian secara spontan aroma dari lilin tersbut akan terhirup. Bagi ibu hamil dianjurkan memilih lilin aromaterapi yang terbuat dari bahan alami contohnya soy wax dan palm wax (Sinulingga dan Patriani 2023).
+                           </P>
+                           <div class="row">
+                               <div class="col-4">
+                                   <img src="assets/photo/bab3/image 2.png" class="img-fluid" alt="Gambar 2: Lilin Aromaterapi
+                                   (Sumber: Berita 99.com)">
+                               </div>
+                               <div class="row-8"><p class="desc secondary poppins-regular" style="font-size: small;" >Gambar 2: Lilin Aromaterapi
+                                   (Sumber: Berita 99.com)</p></div>
+                           </div>
+                       </div>
+                   </div>   
+        
+                <div class="container d-flex flex-column">
+                <h8 class="title secondary poppins-bold">c. Aromateraputic Baths</h8>
+                <P class="desc secondary poppins-regular">Tehnik merendam sebagain tubuh dalam air yang telah diteteskan minyak essensial dengan suhu 40∘ C selama 15-30 menit. Saat merendam tubuh pada air berisi aromaterapi akan terjadi reaksi penetrasi dalam aliran darah melalui kelenjar keringat dan jalan nafas sehingga akan menghasilkan efek terapi pada kulit, sistem kardiovaskuler hingga sistem persyarafan.
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/photo/bab3/image 2.png" class="img-fluid" alt="Gambar : Tehnik Aromateraputic Baths
+                            (Sumber: Alodokter.com)">
+                        </div>
+                        <div class="row-8"><p class="desc secondary poppins-regular" style="font-size: small;" >Gambar : Tehnik Aromateraputic Baths
+                            (Sumber: Alodokter.com)</p></div>
+                    </div>
+                </div>
+            </div>
+
+                <div>
+                    <div class="container d-flex flex-column">
+                        <h5 class="title secondary poppins-bold">F. Evaluasi</h5>
+                        <div class="eval-container">
+                            <h5 class="question secondary poppins-medium">Dibawah ini manakah terapi komplementer yang
+                                bermanfaat untuk
+                                meningkatkan kualitas tidur menurut Aurellia, 2013?</h5>
+                            <ol type="a">
+                                <li>
+                                    <p class="answer secondary poppins-light">Akupuntur</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Yoga</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Aromaterapi</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Meditasi</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column">
+                        <div class="eval-container">
+                            <h5 class="question secondary poppins-medium">Dibawah ini manakah yang tidak termasuk
+                                kedalam
+                                tujuan terapi komplementer?</h5>
+                            <ol type="a">
+                                <li>
+                                    <p class="answer secondary poppins-light">Sebagai pengobatan non farmakologis</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Sebagai pengobatan konvensional</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Memberdayakan tubuh untuk sembuh sendiri
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Meningkatkan system imunitas tubuh</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="eval-container">
+                            <h5 class="question secondary poppins-medium">Dibawah ini manakah tidak termasuk terapi
+                                komplementer yang bermanfaat untuk meningkatkan mengurangi kecemasan menurut Aurellia,
+                                2013?
+                            </h5>
+                            <ol type="a">
+                                <li>
+                                    <p class="answer secondary poppins-light">Meditasi</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Yoga</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Relaksasi</p>
+                                </li>
+                                <li>
+                                    <p class="answer secondary poppins-light">Herbal</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -157,6 +394,33 @@
                 button.style.display = "block";
             }
         };
+    </script>
+    <!-- Copy these belolw -->
+    <script type="text/javascript">
+
+        $(window).ready(function () {
+            $('#magazine').turn({
+                display: 'double',
+                acceleration: true,
+                gradients: !$.isTouch,
+                elevation: 50,
+                when: {
+                    turned: function (e, page) {
+                        console.log('Current view: ', $(this).turn('view'));
+                    }
+                }
+            });
+        });
+
+
+        $(window).bind('keydown', function (e) {
+
+            if (e.keyCode == 37)
+                $('#magazine').turn('previous');
+            else if (e.keyCode == 39)
+                $('#magazine').turn('next');
+
+        });
 
     </script>
 </body>
