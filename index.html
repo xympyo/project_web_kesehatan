@@ -23,7 +23,7 @@
                     <img src="./assets/assets/hamburger_bar.svg" alt="Hamburger Bar" class=" img-fluid btn"
                         onclick="show_bar()">
                 </div>
-                <div class="information position-absolute" style="left: 1rem;">
+                <div class="information position-absolute d-none d-md-block" style="left: 1rem;">
                     <img src="./assets/assets/nav_line.svg" alt="">
                     <p class="poppins-semibold primary">Apa sih isinya?</p>
                 </div>
@@ -139,28 +139,33 @@
         const hide_bar = () => {
             const navbarContainer = document.getElementById("navbar-container");
             const body = document.body;
+            const navbarDisplay = window.getComputedStyle(navbarContainer).display;
 
-            if (navbarContainer.style.display === "block") {
+            if (navbarDisplay === "block") {
                 navbarContainer.style.display = "none";
                 body.classList.remove("no-scroll");
                 show_bar();
+                console.log("Navbar hidden, scrolling enabled");
             } else {
                 navbarContainer.style.display = "block";
                 body.classList.add("no-scroll");
+                console.log("Navbar shown, scrolling disabled");
             }
         };
 
         const show_bar = () => {
             const button = document.getElementById("btn-container");
+            const buttonDisplay = window.getComputedStyle(button).display;
 
-            if (button.style.display === "block") {
+            if (buttonDisplay === "block") {
                 button.style.display = "none";
                 hide_bar();
+                console.log("Button hidden");
             } else {
                 button.style.display = "block";
+                console.log("Button shown");
             }
         };
-
     </script>
 </body>
 
