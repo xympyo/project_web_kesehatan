@@ -42,3 +42,11 @@ function right(bab, container, number) {
   question.style.color = "#27ae60";
   rightAnswer.style.color = "#27ae60";
 }
+
+function check(bab, container, answer, number) {
+  console.log("yes");
+  if (container == 1 && answer != "aromaterapi") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+  }
+}
