@@ -389,6 +389,10 @@
     </div>
 
     <script>
+        if (window.innerWidth <= 425) {
+            window.location.href = "bab1_mobile.html";
+        }
+
         const hide_bar = () => {
             const navbarContainer = document.getElementById("navbar-container");
             const body = document.body;
