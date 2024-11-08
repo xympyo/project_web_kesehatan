@@ -411,7 +411,8 @@
                     <div class="container d-flex flex-column p-3">
                         <h5 class="title secondary poppins-bold">G. Evaluasi</h5>
                         <div class="eval-container" id="eval-container610">
-                            <h5 class="question secondary poppins-medium" id="question610">Dibawah ini senyawa kimia yang terdapat pada
+                            <h5 class="question secondary poppins-medium" id="question610">Dibawah ini senyawa kimia
+                                yang terdapat pada
                                 lidah buaya berfungsi sebagai menyembuhkan luka perineum dan membentu regenerasi kulit
                                 adalah?</h5>
                             <ol type="a">
@@ -435,12 +436,14 @@
                 <div>
                     <div class="container d-flex flex-column p-3">
                         <div class="eval-container" id="eval-container620">
-                            <h5 class="question secondary poppins-medium" id="question620">Di bawah ini manakah yang tidak termasuk
+                            <h5 class="question secondary poppins-medium" id="question620">Di bawah ini manakah yang
+                                tidak termasuk
                                 manfaat lidah buaya bagi penyembuh luka perineum pada ibu nifas?
                             </h5>
                             <ol type="a">
                                 <li>
-                                    <p class="answer secondary poppins-light"  id="answer611" onclick="wrong(6,1,1)">Memberikan rileksasi</p>
+                                    <p class="answer secondary poppins-light" id="answer611" onclick="wrong(6,1,1)">
+                                        Memberikan rileksasi</p>
                                 </li>
                                 <li>
                                     <p class="answer secondary poppins-light">Meregenerasi kulit</p>
@@ -454,7 +457,8 @@
                             </ol>
                         </div>
                         <div class="eval-container" id="eval-container630">
-                            <h5 class="question secondary poppins-medium" id="question630">Di bawah ini indikasi pemberian aloe vera pada
+                            <h5 class="question secondary poppins-medium" id="question630">Di bawah ini indikasi
+                                pemberian aloe vera pada
                                 luka perineum ibu nifas, kecuali?</h5>
                             <ol type="a">
                                 <li>
@@ -573,6 +577,9 @@
     </div>
 
     <script>
+        if (window.innerWidth <= 425) {
+            window.location.href = "bab6_mobile.html";
+        }
         const hide_bar = () => {
             const navbarContainer = document.getElementById("navbar-container");
             const body = document.body;
