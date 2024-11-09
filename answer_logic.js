@@ -45,15 +45,19 @@ function right(bab, container, number) {
 
 function check(bab, container, answer, number) {
   console.log("yes");
-  if (container == 1 && answer != "aromaterapi") {
+  if (bab == 1 && container == 1 && answer != "aromaterapi") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
-  if (container == 2 && answer != "Sebagai pengobatan konvensional") {
+  if (
+    bab == 1 &&
+    container == 2 &&
+    answer != "Sebagai pengobatan konvensional"
+  ) {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
-  if (container == 3 && answer != "Herbal") {
+  if (bab == 1 && container == 3 && answer != "Herbal") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }

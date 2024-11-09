@@ -150,3 +150,33 @@ a {
 .bgs-secondary {
   background-color: #1f2b24;
 }
+
+.float-up {
+  animation: float-up 3s infinite ease-in-out;
+}
+.float-down {
+  animation: float-down 3s infinite ease-in-out;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+@keyframes float-down {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
