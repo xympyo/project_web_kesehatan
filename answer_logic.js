@@ -49,4 +49,12 @@ function check(bab, container, answer, number) {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
+  if (container == 2 && answer != "Sebagai pengobatan konvensional") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+  }
+  if (container == 3 && answer != "Herbal") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+  }
 }

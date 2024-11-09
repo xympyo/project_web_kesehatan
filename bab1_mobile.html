@@ -48,7 +48,6 @@
             filter: drop-shadow(0px .25rem .25rem #000000);
             color: #ffffff;
         }
-
     </style>
 </head>
 
@@ -323,77 +322,113 @@
                                             </li>
                                         </div>
                                     </ol>
-
-                                    <h5 class="question secondary poppins-medium">Dibawah ini manakah yang tidak termasuk kedalam tujuan terapi komplementer?</h5>
-                                        <ol type="a">
-                                            <div class="content">
-                                                <li class="d-flex flex-row align-items-center">
-                                                    <input id="answer1" type="radio" name="answer" value="Sebagai pengobatan non farmakologis"
-                                                        onchange="check(1,2,'Sebagai pengobatan non farmakologis',1)" class="answers me-3">
-                                                    <label for="answer1" id="answers121">Sebagai pengobatan non farmakologis</label>
-                                                </li>
-                                            </div>
-                                            <div class="content">
-                                                <li class="d-flex flex-row align-items-center">
-                                                    <input id="answer2" type="radio" name="answer" value="Sebagai pengobatan konvensional"
-                                                        onchange="check(1,2,'Sebagai pengobatan konvensional',1)" class="answers me-3">
-                                                    <label for="answer2" id="answers122">Sebagai pengobatan konvensional</label>
-                                                </li>
-                                            </div>
-
-                                            <div class="content">
-                                                <li class="d-flex flex-row align-items-center">
-                                                    <input id="answer3" type="radio" name="answer" value="Memberdayakan tubuh untuk sembuh sendiri"
-                                                        onchange="check(1,2,'Memberdayakan tubuh untuk sembuh sendiri',3)" class="answers me-3">
-                                                    <label for="answer3" id="answers123">Memberdayakan tubuh untuk sembuh sendiri</label>
-                                                </li>
-                                            </div>
-
-                                            <div class="content">
-                                                <li class="d-flex flex-row align-items-center">
-                                                    <input id="answer4" type="radio" name="answer" value="Meningkatkan system imunitas tubuh"
-                                                        onchange="check(1,2,'Meningkatkan system imunitas tubuh',4)" class="answers me-3">
-                                                    <label for="answer4" id="answers124">Meningkatkan system imunitas tubuh</label>
-                                                </li>
-                                            </div>
-                                        </ol>
-
-                                        <h5 class="question secondary poppins-medium">Dibawah ini manakah tidak termasuk terapi
-                                            komplementer yang bermanfaat untuk meningkatkan mengurangi kecemasan menurut Aurellia,
-                                            2013?
-                                        </h5>
-                                        <ol type="a">
+                                </form>
+                                <form class="eval-container">
+                                    <!-- check(1,1,"akupuntur") itu parameter pertama bab, parameter kedua container, parameter ketiga jawaban -->
+                                    <!-- di id label, itu answers111, answers112, answers113, answers114, nah digit pertama itu bab, kedua container,
+                                      ketiga jawaban keberapa  -->
+                                    <h5 class="question secondary poppins-medium">Dibawah ini manakah yang tidak
+                                        termasuk kedalam tujuan terapi komplementer?</h5>
+                                    <ol type="a">
                                         <div class="content">
                                             <li class="d-flex flex-row align-items-center">
-                                                <input id="answer1" type="radio" name="answer" value="Meditasi"
-                                                    onchange="check(1,3,'Meditasi',1)" class="answers me-3">
-                                                <label for="answer1" id="answers131">Meditasi</label>
+                                                <input id="answer5" type="radio" name="answer"
+                                                    value="Sebagai pengobatan non farmakologis"
+                                                    onchange="check(1,2,'Sebagai pengobatan non farmakologis',1)"
+                                                    class="answers me-3">
+                                                <label for="answer5" id="answers121">Sebagai pengobatan non
+                                                    farmakologis</label>
+                                            </li>
+                                        </div>
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer6" type="radio" name="answer"
+                                                    value="Sebagai pengobatan konvensional"
+                                                    onchange="check(1,2,'Sebagai pengobatan konvensional',1)"
+                                                    class="answers me-3">
+                                                <label for="answer6" id="answers122">Sebagai pengobatan
+                                                    konvensional</label>
                                             </li>
                                         </div>
 
                                         <div class="content">
                                             <li class="d-flex flex-row align-items-center">
-                                                <input id="answer2" type="radio" name="answer" value="Yoga"
-                                                    onchange="check(1,3,'Yoga',2)" class="answers me-3">
-                                                <label for="answer2" id="answers132">Yoga</label>
+                                                <input id="answer7" type="radio" name="answer"
+                                                    value="Memberdayakan tubuh untuk sembuh sendiri"
+                                                    onchange="check(1,2,'Memberdayakan tubuh untuk sembuh sendiri',3)"
+                                                    class="answers me-3">
+                                                <label for="answer7" id="answers123">Memberdayakan tubuh untuk sembuh
+                                                    sendiri</label>
                                             </li>
-                                        </div> 
-                                        
-                                        <div class="content">
-                                            <li class="d-flex flex-row align-items-center">
-                                                <input id="answer3" type="radio" name="answer" value="Relaksasi"
-                                                    onchange="check(1,3,'Relaksasi',3)" class="answers me-3">
-                                                <label for="answer3" id="answers133">Relaksasi</label>
-                                            </li>
-                                        </div> 
+                                        </div>
 
                                         <div class="content">
                                             <li class="d-flex flex-row align-items-center">
-                                                <input id="answer4" type="radio" name="answer" value="Herbal"
-                                                    onchange="check(1,3,'Herbal',4)" class="answers me-3">
-                                                <label for="answer4" id="answers134">Herbal</label>
+                                                <input id="answer8" type="radio" name="answer"
+                                                    value="Meningkatkan system imunitas tubuh"
+                                                    onchange="check(1,2,'Meningkatkan system imunitas tubuh',4)"
+                                                    class="answers me-3">
+                                                <label for="answer8" id="answers124">Meningkatkan system imunitas
+                                                    tubuh</label>
                                             </li>
-                                        </div> 
+                                        </div>
+                                    </ol>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column p-2">
+                        <div class="row">
+                            <h5 class="title secondary poppins-bold">F. Evaluasi</h5>
+                        </div>
+                        <div class="row">
+                            <div class="container">
+                                <!-- masukin 3 3 nya yaa -->
+                                <form class="eval-container">
+                                    <!-- check(1,1,"akupuntur") itu parameter pertama bab, parameter kedua container, parameter ketiga jawaban -->
+                                    <!-- di id label, itu answers111, answers112, answers113, answers114, nah digit pertama itu bab, kedua container,
+                                      ketiga jawaban keberapa  -->
+
+                                    <h5 class="question secondary poppins-medium">Dibawah ini manakah tidak termasuk
+                                        terapi
+                                        komplementer yang bermanfaat untuk meningkatkan mengurangi kecemasan menurut
+                                        Aurellia,
+                                        2013?
+                                    </h5>
+                                    <ol type="a">
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer9" type="radio" name="answer" value="Meditasi"
+                                                    onchange="check(1,3,'Meditasi',1)" class="answers me-3">
+                                                <label for="answer9" id="answers131">Meditasi</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer10" type="radio" name="answer" value="Yoga"
+                                                    onchange="check(1,3,'Yoga',2)" class="answers me-3">
+                                                <label for="answer10" id="answers132">Yoga</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer11" type="radio" name="answer" value="Relaksasi"
+                                                    onchange="check(1,3,'Relaksasi',3)" class="answers me-3">
+                                                <label for="answer11" id="answers133">Relaksasi</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer12" type="radio" name="answer" value="Herbal"
+                                                    onchange="check(1,3,'Herbal',4)" class="answers me-3">
+                                                <label for="answer12" id="answers134">Herbal</label>
+                                            </li>
+                                        </div>
                                     </ol>
                                 </form>
                             </div>
