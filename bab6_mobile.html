@@ -569,6 +569,44 @@
                         </div>
                     </div>
                 </div>
+                <div class="container d-flex flex-column">
+                    <audio id="audioPlayer">
+                        <source src="./assets/audio/bab6.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8 p-5">
+                            <div class="mp3-container p-3"
+                                style="background-color: #1f2b24; border-radius: .5rem; filter: drop-shadow(0rem .5rem .75rem #000000);">
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <img id="myImage" src="./assets/illustration/hero_section 1.png"
+                                            class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <div class="row d-flex justify-content-center align-items-center mt-3">
+                                    <p class="desc primary poppins-regular text-center"><span
+                                            id="currentTime">0:00</span>
+                                    </p>
+                                    <input type="range" id="progressBar" value="0" max="100"
+                                        style="width: max-content;">
+                                </div>
+                                <div class="row d-flex justify-content-center align-items-center mt-3">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <h5 class="primary desc poppins-bold text-center pt-1 pb-1" id="playButton"
+                                            style="background-color: #ffffff; border-radius: .25rem;">Mulai</h5>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
             </div>
             </div>
             <div class="row mt-3">
@@ -656,7 +694,66 @@
         </div>
     </div>
     </div>
+    <!-- script for audio player -->
+    <script>
+        const audioPlayer = document.getElementById("audioPlayer");
+        const playButton = document.getElementById("playButton");
+        const currentTimeDisplay = document.getElementById("currentTime");
+        const totalTimeDisplay = document.getElementById("totalTime");
+        const progressBar = document.getElementById("progressBar");
 
+        // update total duration
+        audioPlayer.addEventListener('loadedmetadata', () => {
+            totalTimeDisplay.textContent = formatTime(audioPlayer.duration);
+            progressBar.max = Math.floor(audioPlayer.duration);
+        });
+
+        // play on click
+        playButton.addEventListener('click', () => {
+            isRotating = !isRotating;
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                rotateImg();
+                playButton.textContent = "Hentikan";
+            } else {
+                audioPlayer.pause();
+                playButton.src = "./assets/icon/play_icon.png";
+                playButton.textContent = "Lanjutkan";
+            }
+        });
+
+        // update current time and progress bar
+        audioPlayer.addEventListener('timeupdate', () => {
+            currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
+            progressBar.value = Math.floor(audioPlayer.currentTime);
+        });
+
+
+        // seek audio when bar changed
+        progressBar.addEventListener('input', () => {
+            audioPlayer.currentTime = progressBar.value;
+        });
+
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        // image rotates
+        const myImage = document.getElementById("myImage");
+
+        let rotationAngle = 0;
+        let isRotating = false;
+
+        function rotateImg() {
+            if (isRotating) {
+                rotationAngle = (rotationAngle + 1) % 360;
+                myImage.style.transform = `rotate(${rotationAngle}deg)`;
+                requestAnimationFrame(rotateImg);
+            }
+        }
+    </script>
     <script>
         if (window.innerWidth > 425) {
             window.location.href = "bab6.html";
