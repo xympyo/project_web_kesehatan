@@ -956,10 +956,14 @@
 
         prev = () => {
             $('#magazine').turn('previous');
+            const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+            audio.play();
         }
 
         next = () => {
             $('#magazine').turn('next');
+            const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+            audio.play();
         }
     </script>
 

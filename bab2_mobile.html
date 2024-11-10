@@ -300,7 +300,8 @@
                                     <ol type="a">
                                         <div class="content">
                                             <li class="d-flex flex-row align-items-center">
-                                                <input id="answer17" type="radio" name="answer" value="Terapi Hiperbarik"
+                                                <input id="answer17" type="radio" name="answer"
+                                                    value="Terapi Hiperbarik"
                                                     onchange="check(2,2,'Terapi Hiperbarik',1)" class="answers me-3">
                                                 <label for="answer17" id="answers211">Terapi Hiperbarik</label>
                                             </li>
@@ -608,10 +609,14 @@
 
         prev = () => {
             $('#magazine').turn('previous');
+            const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+            audio.play();
         }
 
         next = () => {
             $('#magazine').turn('next');
+            const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+            audio.play();
         }
     </script>
 

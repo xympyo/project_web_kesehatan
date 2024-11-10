@@ -1,31 +1,35 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspek Legal Pelayanan Kebidanan Komplementer</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hero_layout.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="flipbookcss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Copy This Below -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="turn.min.js"></script>
-
     <style type="text/css">
-        body {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         /* Copy all of this below */
-
         #magazine {
-            background: rgb(39, 174, 96);
-            background: linear-gradient(90deg, rgba(39, 174, 96, 1) 0%, rgba(39, 174, 163, 1) 50%, rgba(50, 174, 39, 1) 100%);
-            height: 75vh;
             box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.50);
+            height: max-content;
         }
 
         #magazine .turn-page {
             background-color: #ffffff;
             box-shadow: 80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
+            height: max-content;
         }
 
         .page-even {
@@ -36,30 +40,343 @@
             box-shadow: -80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
         }
 
-        input[type="range"]::-webkit-slider-runnable-track {
-            background: #27AE60;
-            border-radius: .25rem;
-            padding: .1rem;
+        button {
+            background-color: #27AE60;
+            box-shadow: none;
+            border: none;
+            border-radius: .5rem;
+            padding: .5rem;
+            filter: drop-shadow(0px .25rem .25rem #000000);
+            color: #ffffff;
         }
     </style>
-
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="global.css">
-    <!-- Copy only this -->
-    <link rel="stylesheet" href="flipbookcss.css">
 </head>
 
 <body>
-    <!-- COPY first, then change content -->
-    <div class="flipbook-section container">
-        <div id="magazine">
-            <div>
+    <div class="container mt-2">
+        <div class="btn-container position-absolute"
+            style="left: 1rem; top: 1rem; filter: drop-shadow(0px 5px 10px #000000);">
+            <div class="position-relative" id="btn-container">
+                <div class="row-gap-5">
+                    <img src="./assets/assets/hamburger_bar.svg" alt="Hamburger Bar" class=" img-fluid btn"
+                        onclick="show_bar()">
+                </div>
+                <div class="information position-absolute d-none d-md-block" style="left: 1rem;">
+                    <img src="./assets/assets/nav_line.svg" alt="">
+                    <p class="poppins-semibold primary">Apa sih isinya?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=" hero-section d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 d-flex flex-column">
+                    <img src="./assets/illustration/bab2_hero 1.png" alt="Bab I Hero" class="float-up img-fluid">
+                    <h3 class="text-center poppins-bold primary">BAB II</h3>
+                    <h6 class="text-center poppins-light primary">ASPEK LEGAL PELAYANAN KEBIDANAN KOMPLEMENTER
+                    </h6>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+        <div class="mobile-view d-flex flex-column">
+            <div id="magazine">
+                <div>
+                    <div class="container d-flex flex-column p-2">
+                        <h5 class="title secondary poppins-bold">A. Legalitas Pelayanan Kebidanan Komplementer</h5>
+                        <p class="desc secondary poppins-regular">Setiap profesi pelayanan kesehatan, dalam menjalankan
+                            tugasnya disuatu institusi mempunyai batas wewenang yang jelas, dan telah di setujui antar
+                            profesi yang lain. Aspek legal merupakan studi kelayakan yang mempermasalahkan keabsahan
+                            suatu tindakan, di tinjau dari segi hukum yang berlaku di Indonesia.
+                            Tujuan aspek legal dalam pelayanan kebidanan adalah dijadikan sebagai suatu persyaratan
+                            untuk melaksanakan praktik bidan perorangan dalam memberikan pelayanan kebidanan sesuai
+                            dengan ketentuan - ketentuan yang sudah ditetapkan dalam perudna- undagan serta memberikan
+                            kejelasan batas- batas kewenangannya dalam menjalankan praktik kebidanan. Meskipun pelayanan
+                            kebidanan komplementer belumempunyai aturan khusu namun dasar hukum pemberian terapi
+                            komplementer telah di atur di beberapa undang - undang.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column p-2">
+                        <div class="container d-flex flex-column p-3">
+                            <h5 class="title secondary poppins-bold">B. Dasar Hukum Pelayanan Komplementer</h5>
+                            <ol>
+                                <li class="secondary">
+                                    <p class="desc secondary poppins-regular">
+                                        PERMENKES RI No. 15 Tahun 2018 tentang penyelenggaraan pelayanan kesehatan
+                                        tradisional
+                                        komplementer.
+                                    </p>
+                                </li>
+                                <li class="secondary">
+                                    <p class="desc secondary poppins-regular">
+                                        Undang-undang RI no. 3 tahun 2009 tentang Kesehatan.
+                                    </p>
+                                </li>
+                                <li class="secondary">
+                                    <p class="desc secondary poppins-regular">
+                                        PERMENKES RI Nomor 1109/Menkes/Per/IX/2007 tentang Penyelenggaraan Pengobatan
+                                        Komplementer Alternative pada Pelayanan Kesehatan.
+                                    </p>
+                                </li>
+                                <li class="secondary">
+                                    <p class="desc secondary poppins-regular">
+                                        Keputusan Direktur Jenderal Bina Pelayanan Medik, No HK.03.05/I/199/2010 Tentang
+                                        Pedoman
+                                        Kriteria Penetapan Komplementer dan Alternatif yang Dapat di Integrasikan pada
+                                        Fasilitas
+                                        Pelayanan Kesehatan.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column p-3">
+                        <h5 class="title secondary poppins-bold">C. Dasar Hukum Jenis Terapi Komplementer</h5>
+                        <p class="desc secondary poppins-regular">
+                            Jenis-jenis terapi komplementer menurut PERMENKES Nomor 1109/Menkes/Per/IX/2007 antara lain:
+                        </p>
+                        <ol>
+                            <li class="secondary">
+                                <p class="desc secondary poppins-regular">Pelayanan pengobatan alternative meliputi:
+                                    Akupuntur, Acupressure, Naturopati, Homepati, dan Ayurweda.</p>
+                            </li>
+                            <li class="secondary">
+                                <p class="desc secondary poppins-regular">Intervensi Tubuh dan Pikiran (mind and body
+                                    intervention): Hipnoterapi, Meditasi, Penyembuhan spiritual dan Yoga.</p>
+                            </li>
+                            <li class="secondary">
+                                <p class="desc secondary poppins-regular">Pengobatan manual: Kiropraktik, Healing touch,
+                                    Pemijatan, Shiatsu, dan Osteopati.</p>
+                            </li>
+                            <li class="secondary">
+                                <p class="desc secondary poppins-regular">Pengobatan non farmakologi dan biologi: jamu,
+                                    obat
+                                    herbal dan gurah.</p>
+                            </li>
+                            <li class="secondary">
+                                <p class="desc secondary poppins-regular">Pengaturan pola makan dan nutrisi untuk
+                                    pencegahan
+                                    dan pengobatan: diet makro dan mikro nutrient.</p>
+                            </li>
+                            <li class="secondary">
+                                <p class="desc secondary poppins-regular">Terapi lain berdasarkan diagnosis dan
+                                    pengobatan:
+                                    Terapi ozon, terapi hiperbarik dan lain - lain (Fitria 2024).</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column p-2">
+                        <div class="container">
+                            <div class="row">
+                                <ol start="5">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <li class="desc secondary poppins-regular">Mengurangi rasa sakit teknik
+                                                komplemneter seperti pijat dan akupuntur dapat mengurangi rasa sakit
+                                                tubuh
+                                            </li>
+                                        </div>
+                                        <div class="col-6">
+                                            <li class="desc secondary poppins-regular">Meningkatkan kualitas hidup,
+                                                terapi komplmenter dapat meningkatkan kualitas hidup seseorang secara
+                                                keseluruhan karena terapi ini memiliki kemampuan untuk mengurangi
+                                                kelelahan fisik dan mental (Anggraeni et al. 2024)
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column p-2">
+                        <div class="row">
+                            <h5 class="title secondary poppins-bold">
+                                D. Peran Bidan Dalam Pelayanan Komplementer
+                            </h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <img src="./assets/illustration/hero_section 1.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row">
+                            <p class="desc secondary poppins-regular">Meskipun peran bidan dalam pelayanan komplementer
+                                tidak ada aturan khsusu namun Peran bidan sebagai Pelaksana yakni melaksanakan tugas
+                                asuhan kebidanan secara mandiri dan kolaborasi, dimana tugas mandiri bidan diantaranya
+                                memberikan pelayanan dasar pada bayi, anak, remaja, masa pra nikah, wanita usia subur
+                                hingga lansia (Setyaningsih 2021).</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column p-2">
+                        <div class="row">
+                            <h5 class="title secondary poppins-bold">
+                                E. Perbedaan Terapi Komplementer Dan Terapi Alternative
+                            </h5>
+                        </div>
+                        <div class="row">
+                            <p class="desc secondary poppins-regular">Terapi komplementer dan terapi alternative kerap
+                                diartikan sama, padahal kedua terapi ini berbeda. Perbedaanya adalah terapi komplementer
+                                merupakan pengobatan yang dapat digunakan bersamaan/berdampingan dengan terapi
+                                konvensional (Medis) yang di resepkan oleh dokter. (Fitria 2024). Sedangkan pengobatan
+                                alternatif adalah pengobatan non medis dimana peralatan dan bahan yang digunakan tidak
+                                termasuk dalam standart pengobatan medis (Andira dan Pudjibudojo 2020). Pada terapi
+                                alternative kebanyakan tidak melalui pengujian ilmiah terlebih dahulu sehingga belum ada
+                                uji ilmiahya tidak aman untuk digunakan dan kemungkinan besar akan memberikan efek
+                                samping yang berbahaya Contoh terapi alternative : Gurah, pijat batu giok, jamu.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <img src="./assets/illustration/bab1_e 1.png" class="float-down img-fluid" alt="">
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container d-flex flex-column p-2">
+                        <div class="row">
+                            <h5 class="title secondary poppins-bold">F. Evaluasi</h5>
+                        </div>
+                        <div class="row">
+                            <div class="container">
+                                <!-- masukin 3 3 nya yaa -->
+                                <form class="eval-container">
+                                    <!-- check(1,1,"akupuntur") itu parameter pertama bab, parameter kedua container, parameter ketiga jawaban -->
+                                    <!-- di id label, itu answers111, answers112, answers113, answers114, nah digit pertama itu bab, kedua container,
+                                      ketiga jawaban keberapa  -->
+                                    <h5 class="question secondary poppins-medium">Dibawah ini manakah
+                                        terapi
+                                        komplementer yang
+                                        bermanfaat untuk
+                                        meningkatkan kualitas tidur menurut Aurellia, 2013?</h5>
+                                    <ol type="a">
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer13" type="radio" name="answer" value="Akupuntur"
+                                                    onchange="check(1,1,'akupuntur',1)" class="answers me-3">
+                                                <label for="answer13" id="answers121">Akupuntur</label>
+                                            </li>
+                                        </div>
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer14" type="radio" name="answer" value="Yoga"
+                                                    onchange="check(2,1,'yoga',2)" class="answers me-3">
+                                                <label for="answer14" id="answers212">Yoga</label>
+                                            </li>
+                                        </div>
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer15" type="radio" name="answer" value="Aromaterapi"
+                                                    onchange="check(2,1,'aromaterapi',3)" class="answers me-3">
+                                                <label for="answer15" id="answers213">Aromaterapi</label>
+                                            </li>
+                                        </div>
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer16" type="radio" name="answer" value="Meditasi"
+                                                    onchange="check(2,1,'meditasi',4)" class="answers me-3">
+                                                <label for="answer16" id="answers214">Meditasi</label>
+                                            </li>
+                                        </div>
+                                    </ol>
+
+                                    <h5 class="question secondary poppins-medium">Jenis-jenis terai
+                                        komplementer yang bermanfaat
+                                        untuk tubuh dan fikiran adalah?</h5>
+                                    <ol type="a">
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer17" type="radio" name="answer"
+                                                    value="Terapi Hiperbarik"
+                                                    onchange="check(2,2,'Terapi Hiperbarik',1)" class="answers me-3">
+                                                <label for="answer17" id="answers211">Terapi Hiperbarik</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer18" type="radio" name="answer" value="Makro Nutrient"
+                                                    onchange="check(2,2,'Terapi Hiperbarik',2)" class="answers me-3">
+                                                <label for="answe18" id="answers212">Makro Nutrient</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer19" type="radio" name="answer" value="Makro Nutrient"
+                                                    onchange="check(2,2,'Terapi Hiperbarik',3)" class="answers me-3">
+                                                <label for="answer19" id="answers213">Makro Nutrient</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer20" type="radio" name="answer" value="Gurah"
+                                                    onchange="check(2,2,'Gurah',4)" class="answers me-3">
+                                                <label for="answer20" id="answers214">Gurah</label>
+                                            </li>
+                                        </div>
+                                    </ol>
+
+                                    <h5 class="question secondary poppins-medium">Di bawah ini manakah yang tidak
+                                        termasuk ke dalam jenis pengobatan non farmakologis</h5>
+                                    <ol type="a">
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer21" type="radio" name="answer" value="Jamu"
+                                                    onchange="check(2,3,'Jamu',1)" class="answers me-3">
+                                                <label for="answer21" id="answers231">Jamu</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer22" type="radio" name="answer" value="PCT"
+                                                    onchange="check(2,3,'PCT',2)" class="answers me-3">
+                                                <label for="answer22" id="answers232">PCT</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer23" type="radio" name="answer" value="Gurah"
+                                                    onchange="check(2,3,'Gurah',3)" class="answers me-3">
+                                                <label for="answer23" id="answers233">Gurah</label>
+                                            </li>
+                                        </div>
+
+                                        <div class="content">
+                                            <li class="d-flex flex-row align-items-center">
+                                                <input id="answer24" type="radio" name="answer" value="Herbal"
+                                                    onchange="check(2,3,'Herbal',4)" class="answers me-3">
+                                                <label for="answer24" id="answers234">Herbal</label>
+                                            </li>
+                                        </div>
+                                    </ol>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="container d-flex flex-column">
                     <audio id="audioPlayer">
-                        <source src="./assets/audio/bab1.mp3" type="audio/mpeg">
+                        <source src="./assets/audio/bab2.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-
                     <div class="row">
                         <div class="col-2"></div>
                         <div class="col-8 p-5">
@@ -81,12 +398,12 @@
                                         style="width: max-content;">
                                 </div>
                                 <div class="row d-flex justify-content-center align-items-center mt-3">
-                                    <div class="col-5"></div>
-                                    <div class="col-2">
-                                        <img id="playButton" style="cursor: pointer;" src="./assets/icon/play_icon.png"
-                                            class="img-fluid" alt="">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <h5 class="primary desc poppins-bold text-center pt-1 pb-1" id="playButton"
+                                            style="background-color: #ffffff; border-radius: .25rem;">Mulai</h5>
                                     </div>
-                                    <div class="col-5"></div>
+                                    <div class="col-1"></div>
                                 </div>
                             </div>
                         </div>
@@ -94,9 +411,91 @@
                     </div>
                 </div>
             </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <button class="desc poppins-bold" onclick="prev()">Sebelum</button>
+                </div>
+                <div class="col-6">
+                    <button class="desc poppins-bold" onclick="next()">Sesudah</button>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Navbar Container -->
+    <div class="bgs-primary position-absolute" id="navbar-container"
+        style="width: fit-content; height: max-content; top: 0; left: 0; border-radius: 0rem 1rem 1rem 0rem;">
+        <div class="container">
+            <div class="row-gap-5">
+                <img src="./assets/assets/back_button.svg" alt="Hamburger Bar" class="img-fluid btn"
+                    onclick="hide_bar()">
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="label mt-3">
+                        <a href="index.html">
+                            <h5 class="triary poppins-semibold">Halaman Utama</h5>
+                        </a>
+                    </div>
+                    <div class="navbar mt-3 d-flex flex-column">
+                        <a href="bab1.html" class="mt-3 navbtn">
+                            <div class="row">
+                                <h5 class="triary poppins-semibold">Bab I</h5>
+                                <h6 class="poppins-extralight">Konsep Dasar Asuhan Kebidanan Komplementer
+                                    Pada
+                                    Masa Nifas</h6>
+                            </div>
+                    </div>
+                    </a>
+                    <a href="bab2.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab II</h5>
+                            <h6 class="poppins-extralight">Aspek Legal Pelayanan Kebidanan
+                                Komplementer</h6>
+                        </div>
+                    </a>
+                    <a href="bab3.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab III</h5>
+                            <h6 class="poppins-extralight">Terapi Komplementer Aromaterapi Pada Masa
+                                Nifas</h6>
+                        </div>
+                    </a>
+                    <a href="bab4.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab IV</h5>
+                            <h6 class="poppins-extralight">Terapi Komplementer Pijat Laktasi Pada Masa
+                                Nifas</h6>
+                        </div>
+                    </a>
+                    <a href="bab5.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab V</h5>
+                            <h6 class="poppins-extralight">Terapi Komplementer Yoga Pada Masa Nifas
+                            </h6>
+
+                        </div>
+                    </a>
+                    <a href="bab6.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="triary poppins-semibold">Bab VI</h5>
+                                <h6 class="poppins-extralight">Terapi Komplementer Herbal Pada Masa Nifas
+                                </h6>
+                            </div>
+                    </a>
+                    <a href="bab7.html" class="mt-3 pb-3 navbtn">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="triary poppins-semibold">Daftar Pustaka</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- script for audio player -->
     <script>
         const audioPlayer = document.getElementById("audioPlayer");
@@ -117,10 +516,11 @@
             if (audioPlayer.paused) {
                 audioPlayer.play();
                 rotateImg();
-                playButton.src = "./assets/icon/pause_icon.png";
+                playButton.textContent = "Hentikan";
             } else {
                 audioPlayer.pause();
                 playButton.src = "./assets/icon/play_icon.png";
+                playButton.textContent = "Lanjutkan";
             }
         });
 
@@ -156,13 +556,44 @@
             }
         }
     </script>
+    <script>
+        const hide_bar = () => {
+            const navbarContainer = document.getElementById("navbar-container");
+            const body = document.body;
+            const navbarDisplay = window.getComputedStyle(navbarContainer).display;
 
-    <!-- Copy these belolw -->
+            if (navbarDisplay === "block") {
+                navbarContainer.style.display = "none";
+                body.classList.remove("no-scroll");
+                show_bar();
+                console.log("Navbar hidden, scrolling enabled");
+            } else {
+                navbarContainer.style.display = "block";
+                body.classList.add("no-scroll");
+                console.log("Navbar shown, scrolling disabled");
+            }
+        };
+
+        const show_bar = () => {
+            const button = document.getElementById("btn-container");
+            const buttonDisplay = window.getComputedStyle(button).display;
+
+            if (buttonDisplay === "block") {
+                button.style.display = "none";
+                hide_bar();
+                console.log("Button hidden");
+            } else {
+                button.style.display = "block";
+                console.log("Button shown");
+            }
+        };
+
+    </script>
     <script type="text/javascript">
-
+        let flipBookEffect = document.getElementById("flipBook");
         $(window).ready(function () {
             $('#magazine').turn({
-                display: 'double',
+                display: 'single',
                 acceleration: true,
                 gradients: !$.isTouch,
                 elevation: 50,
@@ -174,18 +605,21 @@
             });
         });
 
+        prev = () => {
+            $('#magazine').turn('previous');
+            const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+            audio.play();
+        }
 
-        $(window).bind('keydown', function (e) {
-
-            if (e.keyCode == 37)
-                $('#magazine').turn('previous');
-            else if (e.keyCode == 39)
-                $('#magazine').turn('next');
-
-        });
-
+        next = () => {
+            $('#magazine').turn('next');
+            const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+            audio.play();
+        }
     </script>
 
+    <!-- tolong copy ini -->
+    <script src="answer_logic.js"></script>
 </body>
 
 </html>
