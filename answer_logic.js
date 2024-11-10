@@ -66,7 +66,7 @@ function check(bab, container, answer, number) {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
-  if (bab == 2 && container == 2 && answer != "meditasi") {
+  if (bab == 2 && container == 2 && answer != "Meditasi") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
