@@ -35,6 +35,12 @@
         .page-odd {
             box-shadow: -80px 0px 120px 0px rgba(0, 0, 0, 0.16) inset;
         }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            background: #27AE60;
+            border-radius: .25rem;
+            padding: .1rem;
+        }
     </style>
 
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -49,149 +55,107 @@
         <div id="magazine">
             <div>
                 <div class="container d-flex flex-column">
-                    <h5 class="title secondary poppins-bold">A. Legalitas Pelayanan Kebidanan Komplementer</h5>
-                    <p class="desc secondary poppins-regular">Setiap profesi pelayanan kesehatan, dalam menjalankan
-                        tugasnya disuatu institusi mempunyai batas wewenang yang jelas, dan telah di setujui antar
-                        profesi yang lain. Aspek legal merupakan studi kelayakan yang mempermasalahkan keabsahan suatu
-                        tindakan, di tinjau dari segi hukum yang berlaku di Indonesia.
-                        Tujuan aspek legal dalam pelayanan kebidanan adalah dijadikan sebagai suatu persyaratan untuk
-                        melaksanakan praktik bidan perorangan dalam memberikan pelayanan kebidanan sesuai dengan
-                        ketentuan - ketentuan yang sudah ditetapkan dalam perudna- undagan serta memberikan kejelasan
-                        batas- batas kewenangannya dalam menjalankan praktik kebidanan. Meskipun pelayanan kebidanan
-                        komplementer belumempunyai aturan khusu namun dasar hukum pemberian terapi komplementer telah di
-                        atur di beberapa undang - undang.</p>
-                </div>
-            </div>
-            <div>
-                <div class="container d-flex flex-column">
-                    <h5 class="title secondary poppins-bold">B. Dasar Hukum Pelayanan Komplementer</h5>
-                    <ol>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">
-                                PERMENKES RI No. 15 Tahun 2018 tentang penyelenggaraan pelayanan kesehatan tradisional
-                                komplementer.
-                            </p>
-                        </li>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">
-                                Undang-undang RI no. 3 tahun 2009 tentang Kesehatan.
-                            </p>
-                        </li>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">
-                                PERMENKES RI Nomor 1109/Menkes/Per/IX/2007 tentang Penyelenggaraan Pengobatan
-                                Komplementer Alternative pada Pelayanan Kesehatan.
-                            </p>
-                        </li>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">
-                                Keputusan Direktur Jenderal Bina Pelayanan Medik, No HK.03.05/I/199/2010 Tentang Pedoman
-                                Kriteria Penetapan Komplementer dan Alternatif yang Dapat di Integrasikan pada Fasilitas
-                                Pelayanan Kesehatan.
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div>
-                <div class="container d-flex flex-column">
-                    <h5 class="title secondary poppins-bold">C. Dasar Hukum Jenis Terapi Komplementer</h5>
-                    <p class="desc secondary poppins-regular">
-                        Jenis-jenis terapi komplementer menurut PERMENKES Nomor 1109/Menkes/Per/IX/2007 antara lain:
-                    </p>
-                    <ol>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">Pelayanan pengobatan alternative meliputi:
-                                Akupuntur, Acupressure, Naturopati, Homepati, dan Ayurweda.</p>
-                        </li>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">Intervensi Tubuh dan Pikiran (mind and body
-                                intervention): Hipnoterapi, Meditasi, Penyembuhan spiritual dan Yoga.</p>
-                        </li>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">Pengobatan manual: Kiropraktik, Healing touch,
-                                Pemijatan, Shiatsu, dan Osteopati.</p>
-                        </li>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">Pengobatan non farmakologi dan biologi: jamu, obat
-                                herbal dan gurah.</p>
-                        </li>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">Pengaturan pola makan dan nutrisi untuk pencegahan
-                                dan pengobatan: diet makro dan mikro nutrient.</p>
-                        </li>
-                        <li class="secondary">
-                            <p class="desc secondary poppins-regular">Terapi lain berdasarkan diagnosis dan pengobatan:
-                                Terapi ozon, terapi hiperbarik dan lain - lain (Fitria 2024).</p>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div>
-                <div class="container d-flex flex-column">
-                    <h5 class="title secondary poppins-bold">D. Evaluasi</h5>
-                    <div class="eval-container">
-                        <h5 class="question secondary poppins-medium">Di bawah ini yang termasuk dalam jenis terapi
-                            manual adalah?</h5>
-                        <ol type="a">
-                            <li>
-                                <p class="answer secondary poppins-light">Pemijatan</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">Ayurweda</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">Terapi Ozon</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">Jamu</p>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="eval-container">
-                        <h5 class="question secondary poppins-medium">Jenis-jenis terai komplementer yang bermanfaat
-                            untuk tubuh dan fikiran adalah?</h5>
-                        <ol type="a">
-                            <li>
-                                <p class="answer secondary poppins-light">Terapi Hiperbarik</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">Diet Makro Nutrient</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">Meditasi</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">Gurah</p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="container d-flex flex-column">
-                    <div class="eval-container">
-                        <h5 class="question secondary poppins-medium">Di bawah ini manakah yang tidak termasuk ke dalam
-                            jenis pengobatan non farmakologis</h5>
-                        <ol type="a">
-                            <li>
-                                <p class="answer secondary poppins-light">Jamu</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">PCT</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">Gurah</p>
-                            </li>
-                            <li>
-                                <p class="answer secondary poppins-light">Herbal</p>
-                            </li>
-                        </ol>
+                    <audio id="audioPlayer">
+                        <source src="./assets/audio/bab1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8 p-5">
+                            <div class="mp3-container p-3"
+                                style="background-color: #1f2b24; border-radius: .5rem; filter: drop-shadow(0rem .5rem .75rem #000000);">
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <img id="myImage" src="./assets/illustration/hero_section 1.png"
+                                            class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <div class="row d-flex justify-content-center align-items-center mt-3">
+                                    <p class="desc primary poppins-regular text-center"><span
+                                            id="currentTime">0:00</span>
+                                    </p>
+                                    <input type="range" id="progressBar" value="0" max="100"
+                                        style="width: max-content;">
+                                </div>
+                                <div class="row d-flex justify-content-center align-items-center mt-3">
+                                    <div class="col-5"></div>
+                                    <div class="col-2">
+                                        <img id="playButton" style="cursor: pointer;" src="./assets/icon/play_icon.png"
+                                            class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- script for audio player -->
+    <script>
+        const audioPlayer = document.getElementById("audioPlayer");
+        const playButton = document.getElementById("playButton");
+        const currentTimeDisplay = document.getElementById("currentTime");
+        const totalTimeDisplay = document.getElementById("totalTime");
+        const progressBar = document.getElementById("progressBar");
+
+        // update total duration
+        audioPlayer.addEventListener('loadedmetadata', () => {
+            totalTimeDisplay.textContent = formatTime(audioPlayer.duration);
+            progressBar.max = Math.floor(audioPlayer.duration);
+        });
+
+        // play on click
+        playButton.addEventListener('click', () => {
+            isRotating = !isRotating;
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                rotateImg();
+                playButton.src = "./assets/icon/pause_icon.png";
+            } else {
+                audioPlayer.pause();
+                playButton.src = "./assets/icon/play_icon.png";
+            }
+        });
+
+        // update current time and progress bar
+        audioPlayer.addEventListener('timeupdate', () => {
+            currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
+            progressBar.value = Math.floor(audioPlayer.currentTime);
+        });
+
+
+        // seek audio when bar changed
+        progressBar.addEventListener('input', () => {
+            audioPlayer.currentTime = progressBar.value;
+        });
+
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        // image rotates
+        const myImage = document.getElementById("myImage");
+
+        let rotationAngle = 0;
+        let isRotating = false;
+
+        function rotateImg() {
+            if (isRotating) {
+                rotationAngle = (rotationAngle + 1) % 360;
+                myImage.style.transform = `rotate(${rotationAngle}deg)`;
+                requestAnimationFrame(rotateImg);
+            }
+        }
+    </script>
 
     <!-- Copy these belolw -->
     <script type="text/javascript">
