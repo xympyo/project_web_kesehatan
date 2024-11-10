@@ -75,15 +75,15 @@ function check(bab, container, answer, number) {
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
   //bab 3
-  if (bab == 3 && container == 1 && answer != "meningkatkan libido") {
+  if (bab == 3 && container == 1 && answer != "Meningkatkan Libido") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
-  if (bab == 3 && container == 2 && answer != "inhalasi") {
+  if (bab == 3 && container == 2 && answer != "Anti Oksidant") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
-  if (bab == 3 && container == 3 && answer != "Anti oksidant") {
+  if (bab == 3 && container == 3 && answer != "Inhalasi") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
@@ -92,7 +92,7 @@ function check(bab, container, answer, number) {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
-  if (bab == 4 && container == 2 && answer != "Ibu yang ingin relaksasi") {
+  if (bab == 4 && container == 2 && answer != "Ibu yang ingin relaktasi") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
@@ -100,7 +100,7 @@ function check(bab, container, answer, number) {
     bab == 4 &&
     container == 3 &&
     answer !=
-      " Pijat laktasi merupakan pemijatan yang dilakukan pada beberapa bagian tubuh seperti kepala, leher, bahu punggung dan payudara"
+      "Pijat laktasi merupakan pemijatan yang dilakukan pada daerah leher hingga payudara"
   ) {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
@@ -109,8 +109,7 @@ function check(bab, container, answer, number) {
   if (
     bab == 5 &&
     container == 1 &&
-    answer !=
-      "Ibu yang melahirkan secara spontan ataupun sectio caesarea tanpa adanya komplikasi"
+    answer != "Ibu nifas yang mengalami komplikasi selama persalinan"
   ) {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
@@ -120,6 +119,14 @@ function check(bab, container, answer, number) {
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }
   if (bab == 5 && container == 3 && answer != "Mencegah infeksi") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+  }
+  if (
+    bab == 5 &&
+    container == 4 &&
+    answer != "Ibu yang mengalami kelainan ginjal, jantung dan paru-paru"
+  ) {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
   }

@@ -478,6 +478,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
                     <div class="container d-flex flex-column">
                         <audio id="audioPlayer">
                             <source src="./assets/audio/bab6.mp3" type="audio/mpeg">
@@ -504,12 +506,12 @@
                                             style="width: max-content;">
                                     </div>
                                     <div class="row d-flex justify-content-center align-items-center mt-3">
-                                        <div class="col-1"></div>
-                                        <div class="col-10">
-                                            <h5 class="primary desc poppins-bold text-center pt-1 pb-1" id="playButton"
-                                                style="background-color: #ffffff; border-radius: .25rem;">Mulai</h5>
+                                        <div class="col-5"></div>
+                                        <div class="col-2">
+                                            <img id="playButton" style="cursor: pointer;"
+                                                src="./assets/icon/play_icon.png" class="img-fluid" alt="">
                                         </div>
-                                        <div class="col-1"></div>
+                                        <div class="col-5"></div>
                                     </div>
                                 </div>
                             </div>
@@ -518,48 +520,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="container d-flex flex-column">
-                    <audio id="audioPlayer">
-                        <source src="./assets/audio/bab1.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8 p-5">
-                            <div class="mp3-container p-3"
-                                style="background-color: #1f2b24; border-radius: .5rem; filter: drop-shadow(0rem .5rem .75rem #000000);">
-                                <div class="row">
-                                    <div class="col-3"></div>
-                                    <div class="col-6">
-                                        <img id="myImage" src="./assets/illustration/hero_section 1.png"
-                                            class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-3"></div>
-                                </div>
-                                <div class="row d-flex justify-content-center align-items-center mt-3">
-                                    <p class="desc primary poppins-regular text-center"><span
-                                            id="currentTime">0:00</span>
-                                    </p>
-                                    <input type="range" id="progressBar" value="0" max="100"
-                                        style="width: max-content;">
-                                </div>
-                                <div class="row d-flex justify-content-center align-items-center mt-3">
-                                    <div class="col-5"></div>
-                                    <div class="col-2">
-                                        <img id="playButton" style="cursor: pointer;" src="./assets/icon/play_icon.png"
-                                            class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-5"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                </div>
-            </div>
         </div>
+    </div>
     </div>
     </div>
 
@@ -701,7 +663,7 @@
         }
     </script>
     <script>
-        if (window.innerWidth <= 425) {
+        if (window.innerWidth < 425) {
             window.location.href = "bab6_mobile.html";
         }
         const hide_bar = () => {
