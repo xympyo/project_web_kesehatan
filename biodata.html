@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hero_layout.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="flipbookcss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn-container position-absolute" style="left: 1rem; top: 1rem;">
+            <div class="position-relative" id="btn-container">
+                <div class="row-gap-5">
+                    <img src="./assets/assets/hamburger_bar.svg" alt="Hamburger Bar" class=" img-fluid btn"
+                        onclick="show_bar()">
+                </div>
+                <div class="information position-absolute d-none" style="left: 1rem;">
+                    <img src="./assets/assets/nav_line.svg" alt="">
+                    <p class="poppins-semibold primary">Apa sih isinya?</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 6rem;">
+            <div class="row mt-5">
+                <h1 class="primary poppins-bold text-center fs-lg-1">Biodata Penulis</h1>
+            </div>
+            <div class="row d-flex flex-lg-row flex-md-column mt-5 pb-5">
+                <div class="col-lg-6 col-md-12 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <img src="./assets/biodata/mutmainah.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                        <div class="row">
+                            <h1 class="fs-2 primary poppins-bold text-center mt-3">Mutmainnah, S.ST., M.Keb.</h1>
+                            <h4 class="title primary poppins-light text-left mt-3">Dosen Program Studi Diploma III
+                                Kebidanan
+                                Akademi Kebidanan Batari Toja</h4>
+                            <h5 class="desc primary poppins-regular text-left">Penulis lahir di Tarakan tanggal 10
+                                Februari
+                                1994. Penulis merupakan dosen tetap pada Program Studi Diploma III Kebidanan , Batari
+                                Toja.
+                                Menyelesaikan pendidikan DIII pada Jurusan Kebidanan di kampus Akademi Kebidanan
+                                BatariToja,
+                                melanjutkan pendidikan DIV bidan pendidik di kampus Universitas Mega Rezky Makassar, dan
+                                melanjutkan S2 pada Jurusan Kebidanan di Universitas Hasanuddin Makassar. Dan hingga
+                                saat
+                                ini
+                                aktif melaksanakan Tridarma perguruan tinggi di Institut Batari Toja Bone.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <img src="./assets/biodata/musni.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                        <div class="row">
+                            <h1 class="fs-2 primary poppins-bold text-center mt-3">MUSNI., SKM., M. Kes.</h1>
+                            <h4 class="title primary poppins-light text-left mt-3">Dosen tetap Akademi Kebidanan Batari
+                                Toja
+                            </h4>
+                            <h5 class="desc primary poppins-regular text-left">Musni. Lahir tanggal 8 Februari 1983 di
+                                Batui, Kabupaten Luwuk, Provinsi Sulawesi Selatan. Riwayat Pendidikan, SD Inpres 10/73
+                                Tanete Kabupaten Bone (1989-1995), SMP Negeri 2 Cina Kabupaten Bone (1995-1998), SMA
+                                Negeri
+                                2 Watampone (1998-2001), memperoleh gelar Sarjana Kesehatan Masyarakat Universitas
+                                Hasanuddin (2001-2005). Magister Kesehatan Masyarakat Universitas Hasanuddin
+                                (2006-2009).
+                                Adapun riwayat pekerjaan yaitu pernah bekerja sebagai staf jurusan gizi kesehatan
+                                masyarakat
+                                Universitas Hasanuddin (2005), sebagai Staf Jurnal Media Kesehatan Masyarakat Indonesia
+                                Universitas Hasanuddin (2006), Kepala UPPM Akademi Kebidanan Batari Toja (2019-2024),
+                                Kepala
+                                LPPM Institut Batari Toja Bone (2024), Dosen tetap Akademi Kebidanan Batari Toja
+                                (2010-sekarang).</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Container -->
+    <div class="bgs-primary position-absolute" id="navbar-container"
+        style="width: fit-content; height: max-content; top: 0; left: 0; border-radius: 0rem 1rem 1rem 0rem;">
+        <div class="container">
+            <div class="row-gap-5">
+                <img src="./assets/assets/back_button.svg" alt="Hamburger Bar" class="img-fluid btn"
+                    onclick="hide_bar()">
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="label mt-3">
+                        <a href="index.html">
+                            <h5 class="triary poppins-semibold">Halaman Utama</h5>
+                        </a>
+                    </div>
+                    <a href="bab1.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab I</h5>
+                            <h6 class="poppins-extralight">Konsep Dasar Asuhan Kebidanan Komplementer
+                                Pada
+                                Masa Nifas</h6>
+                        </div>
+                    </a>
+                    <a href="bab2.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab II</h5>
+                            <h6 class="poppins-extralight">Aspek Legal Pelayanan Kebidanan
+                                Komplementer</h6>
+                        </div>
+                    </a>
+                    <a href="bab3.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab III</h5>
+                            <h6 class="poppins-extralight">Terapi Komplementer Aromaterapi Pada Masa
+                                Nifas</h6>
+                        </div>
+                    </a>
+                    <a href="bab4.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab IV</h5>
+                            <h6 class="poppins-extralight">Terapi Komplementer Pijat Laktasi Pada Masa
+                                Nifas</h6>
+                        </div>
+                    </a>
+                    <a href="bab5.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab V</h5>
+                            <h6 class="poppins-extralight">Terapi Komplementer Yoga Pada Masa Nifas
+                            </h6>
+
+                        </div>
+                    </a>
+                    <a href="bab6.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="triary poppins-semibold">Bab VI</h5>
+                                <h6 class="poppins-extralight">Terapi Komplementer Herbal Pada Masa Nifas
+                                </h6>
+                            </div>
+                    </a>
+                    <a href="bab7.html" class="mt-3 pb-3 navbtn">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="triary poppins-semibold">Daftar Pustaka</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="biodata.html" class="mt-3 pb-3 navbtn">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="triary poppins-semibold">Biodata Penulis</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const hide_bar = () => {
+            const navbarContainer = document.getElementById("navbar-container");
+            const body = document.body;
+            const navbarDisplay = window.getComputedStyle(navbarContainer).display;
+
+            if (navbarDisplay === "block") {
+                navbarContainer.style.display = "none";
+                body.classList.remove("no-scroll");
+                show_bar();
+                console.log("Navbar hidden, scrolling enabled");
+            } else {
+                navbarContainer.style.display = "block";
+                body.classList.add("no-scroll");
+                console.log("Navbar shown, scrolling disabled");
+            }
+        };
+
+        const show_bar = () => {
+            const button = document.getElementById("btn-container");
+            const buttonDisplay = window.getComputedStyle(button).display;
+
+            if (buttonDisplay === "block") {
+                button.style.display = "none";
+                hide_bar();
+                console.log("Button hidden");
+            } else {
+                button.style.display = "block";
+                console.log("Button shown");
+            }
+        };
+    </script>
+</body>
+
+</html>
