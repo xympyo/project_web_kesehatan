@@ -448,139 +448,139 @@
                             </a>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- script for audio player -->
-    <script>
-        const audioPlayer = document.getElementById("audioPlayer");
-        const playButton = document.getElementById("playButton");
-        const currentTimeDisplay = document.getElementById("currentTime");
-        const totalTimeDisplay = document.getElementById("totalTime");
-        const progressBar = document.getElementById("progressBar");
+        <!-- script for audio player -->
+        <script>
+            const audioPlayer = document.getElementById("audioPlayer");
+            const playButton = document.getElementById("playButton");
+            const currentTimeDisplay = document.getElementById("currentTime");
+            const totalTimeDisplay = document.getElementById("totalTime");
+            const progressBar = document.getElementById("progressBar");
 
-        // update total duration
-        audioPlayer.addEventListener('loadedmetadata', () => {
-            totalTimeDisplay.textContent = formatTime(audioPlayer.duration);
-            progressBar.max = Math.floor(audioPlayer.duration);
-        });
+            // update total duration
+            audioPlayer.addEventListener('loadedmetadata', () => {
+                totalTimeDisplay.textContent = formatTime(audioPlayer.duration);
+                progressBar.max = Math.floor(audioPlayer.duration);
+            });
 
-        // play on click
-        playButton.addEventListener('click', () => {
-            isRotating = !isRotating;
-            if (audioPlayer.paused) {
-                audioPlayer.play();
-                rotateImg();
-                playButton.src = "./assets/icon/pause_icon.png";
-            } else {
-                audioPlayer.pause();
-                playButton.src = "./assets/icon/play_icon.png";
-            }
-        });
-
-        // update current time and progress bar
-        audioPlayer.addEventListener('timeupdate', () => {
-            currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
-            progressBar.value = Math.floor(audioPlayer.currentTime);
-        });
-
-
-        // seek audio when bar changed
-        progressBar.addEventListener('input', () => {
-            audioPlayer.currentTime = progressBar.value;
-        });
-
-        function formatTime(seconds) {
-            const mins = Math.floor(seconds / 60);
-            const secs = Math.floor(seconds % 60);
-            return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-        }
-
-        // image rotates
-        const myImage = document.getElementById("myImage");
-
-        let rotationAngle = 0;
-        let isRotating = false;
-
-        function rotateImg() {
-            if (isRotating) {
-                rotationAngle = (rotationAngle + 1) % 360;
-                myImage.style.transform = `rotate(${rotationAngle}deg)`;
-                requestAnimationFrame(rotateImg);
-            }
-        }
-    </script>
-    <script>
-        if (window.innerWidth <= 425) {
-            window.location.href = "bab1_mobile.html";
-        }
-
-        const hide_bar = () => {
-            const navbarContainer = document.getElementById("navbar-container");
-            const body = document.body;
-            const navbarDisplay = window.getComputedStyle(navbarContainer).display;
-
-            if (navbarDisplay === "block") {
-                navbarContainer.style.display = "none";
-                body.classList.remove("no-scroll");
-                show_bar();
-                console.log("Navbar hidden, scrolling enabled");
-            } else {
-                navbarContainer.style.display = "block";
-                body.classList.add("no-scroll");
-                console.log("Navbar shown, scrolling disabled");
-            }
-        };
-
-        const show_bar = () => {
-            const button = document.getElementById("btn-container");
-            const buttonDisplay = window.getComputedStyle(button).display;
-
-            if (buttonDisplay === "block") {
-                button.style.display = "none";
-                hide_bar();
-                console.log("Button hidden");
-            } else {
-                button.style.display = "block";
-                console.log("Button shown");
-            }
-        };
-
-    </script>
-    <!-- Copy these belolw -->
-    <script type="text/javascript">
-
-        $(window).ready(function () {
-            $('#magazine').turn({
-                display: 'double',
-                acceleration: true,
-                gradients: !$.isTouch,
-                elevation: 50,
-                when: {
-                    turned: function (e, page) {
-                        console.log('Current view: ', $(this).turn('view'));
-                    }
+            // play on click
+            playButton.addEventListener('click', () => {
+                isRotating = !isRotating;
+                if (audioPlayer.paused) {
+                    audioPlayer.play();
+                    rotateImg();
+                    playButton.src = "./assets/icon/pause_icon.png";
+                } else {
+                    audioPlayer.pause();
+                    playButton.src = "./assets/icon/play_icon.png";
                 }
             });
-        });
+
+            // update current time and progress bar
+            audioPlayer.addEventListener('timeupdate', () => {
+                currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
+                progressBar.value = Math.floor(audioPlayer.currentTime);
+            });
 
 
-        $(window).bind('keydown', function (e) {
-            if (e.keyCode == 37) {
-                const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
-                audio.play();
-                $('#magazine').turn('previous');
-            } else if (e.keyCode == 39) {
-                const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
-                audio.play();
-                $('#magazine').turn('next');
+            // seek audio when bar changed
+            progressBar.addEventListener('input', () => {
+                audioPlayer.currentTime = progressBar.value;
+            });
+
+            function formatTime(seconds) {
+                const mins = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
             }
-        });
+
+            // image rotates
+            const myImage = document.getElementById("myImage");
+
+            let rotationAngle = 0;
+            let isRotating = false;
+
+            function rotateImg() {
+                if (isRotating) {
+                    rotationAngle = (rotationAngle + 1) % 360;
+                    myImage.style.transform = `rotate(${rotationAngle}deg)`;
+                    requestAnimationFrame(rotateImg);
+                }
+            }
+        </script>
+        <script>
+            if (window.innerWidth <= 425) {
+                window.location.href = "bab1_mobile.html";
+            }
+
+            const hide_bar = () => {
+                const navbarContainer = document.getElementById("navbar-container");
+                const body = document.body;
+                const navbarDisplay = window.getComputedStyle(navbarContainer).display;
+
+                if (navbarDisplay === "block") {
+                    navbarContainer.style.display = "none";
+                    body.classList.remove("no-scroll");
+                    show_bar();
+                    console.log("Navbar hidden, scrolling enabled");
+                } else {
+                    navbarContainer.style.display = "block";
+                    body.classList.add("no-scroll");
+                    console.log("Navbar shown, scrolling disabled");
+                }
+            };
+
+            const show_bar = () => {
+                const button = document.getElementById("btn-container");
+                const buttonDisplay = window.getComputedStyle(button).display;
+
+                if (buttonDisplay === "block") {
+                    button.style.display = "none";
+                    hide_bar();
+                    console.log("Button hidden");
+                } else {
+                    button.style.display = "block";
+                    console.log("Button shown");
+                }
+            };
+
+        </script>
+        <!-- Copy these belolw -->
+        <script type="text/javascript">
+
+            $(window).ready(function () {
+                $('#magazine').turn({
+                    display: 'double',
+                    acceleration: true,
+                    gradients: !$.isTouch,
+                    elevation: 50,
+                    when: {
+                        turned: function (e, page) {
+                            console.log('Current view: ', $(this).turn('view'));
+                        }
+                    }
+                });
+            });
 
 
-    </script>
+            $(window).bind('keydown', function (e) {
+                if (e.keyCode == 37) {
+                    const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+                    audio.play();
+                    $('#magazine').turn('previous');
+                } else if (e.keyCode == 39) {
+                    const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+                    audio.play();
+                    $('#magazine').turn('next');
+                }
+            });
 
-    <script src="answer_logic.js"></script>
+
+        </script>
+
+        <script src="answer_logic.js"></script>
 </body>
 
 </html>
