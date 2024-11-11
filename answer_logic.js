@@ -48,6 +48,7 @@ function check(bab, container, answer, number) {
   if (bab == 1 && container == 1 && answer != "aromaterapi") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
   }
   if (
     bab == 1 &&
@@ -56,9 +57,113 @@ function check(bab, container, answer, number) {
   ) {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
   }
   if (bab == 1 && container == 3 && answer != "Herbal") {
     let answerId = "answers" + bab + container + number;
     let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  //bab 2
+  if (bab == 2 && container == 1 && answer != "Pemijatan") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (bab == 2 && container == 2 && answer != "Meditasi") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (bab == 2 && container == 3 && answer != "PCT") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  //bab 3
+  if (bab == 3 && container == 1 && answer != "Meningkatkan Libido") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (bab == 3 && container == 2 && answer != "Anti Oksidant") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (bab == 3 && container == 3 && answer != "Inhalasi") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  //bab 4
+  if (bab == 4 && container == 1 && answer != "Meningkatkan tekanan darah") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (bab == 4 && container == 2 && answer != "Ibu yang ingin relaktasi") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (
+    bab == 4 &&
+    container == 3 &&
+    answer !=
+      "Pijat laktasi merupakan pemijatan yang dilakukan pada daerah leher hingga payudara"
+  ) {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  //bab5
+  if (
+    bab == 5 &&
+    container == 1 &&
+    answer != "Ibu nifas yang mengalami komplikasi selama persalinan"
+  ) {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (bab == 5 && container == 2 && answer != "Bahagia") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (bab == 5 && container == 3 && answer != "Mencegah infeksi") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (
+    bab == 5 &&
+    container == 4 &&
+    answer != "Ibu yang mengalami kelainan ginjal, jantung dan paru-paru"
+  ) {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  //   Bab 6
+  if (bab == 6 && container == 1 && answer != "Polisakarida") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (bab == 6 && container == 2 && answer != "Memberikan rileksasi") {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
+  }
+  if (
+    bab == 6 &&
+    container == 3 &&
+    answer != "Ibu nifas yag alergi dengan lidah buaya"
+  ) {
+    let answerId = "answers" + bab + container + number;
+    let answer = (document.getElementById(answerId).style.color = "#F32013");
+    console.log("Bab " + bab + " container " + container);
   }
 }
