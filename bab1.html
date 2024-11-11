@@ -50,6 +50,12 @@
             filter: drop-shadow(0px .25rem .25rem #000000);
             color: #ffffff;
         }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            background: #27AE60;
+            border-radius: .25rem;
+            padding: .1rem;
+        }
     </style>
 </head>
 
@@ -390,15 +396,13 @@
                             <h5 class="triary poppins-semibold">Halaman Utama</h5>
                         </a>
                     </div>
-                    <div class="navbar mt-3 d-flex flex-column">
-                        <a href="bab1.html" class="mt-3 navbtn">
-                            <div class="row">
-                                <h5 class="triary poppins-semibold">Bab I</h5>
-                                <h6 class="poppins-extralight">Konsep Dasar Asuhan Kebidanan Komplementer
-                                    Pada
-                                    Masa Nifas</h6>
-                            </div>
-                    </div>
+                    <a href="bab1.html" class="mt-3 navbtn">
+                        <div class="row">
+                            <h5 class="triary poppins-semibold">Bab I</h5>
+                            <h6 class="poppins-extralight">Konsep Dasar Asuhan Kebidanan Komplementer
+                                Pada
+                                Masa Nifas</h6>
+                        </div>
                     </a>
                     <a href="bab2.html" class="mt-3 navbtn">
                         <div class="row">
@@ -444,10 +448,16 @@
                             </div>
                         </div>
                     </a>
+                    <a href="biodata.html" class="mt-3 pb-3 navbtn">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="triary poppins-semibold">Biodata Penulis</h5>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- script for audio player -->
     <script>
@@ -564,13 +574,17 @@
 
 
         $(window).bind('keydown', function (e) {
-
-            if (e.keyCode == 37)
+            if (e.keyCode == 37) {
+                const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+                audio.play();
                 $('#magazine').turn('previous');
-            else if (e.keyCode == 39)
+            } else if (e.keyCode == 39) {
+                const audio = new Audio('./assets/audio/flipbook_soundeffect.mp3');
+                audio.play();
                 $('#magazine').turn('next');
-
+            }
         });
+
 
     </script>
 

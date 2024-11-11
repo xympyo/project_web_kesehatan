@@ -180,3 +180,10 @@ a {
     transform: translateY(0rem);
   }
 }
+
+.nav-label {
+  transition: .225s ease-in;
+  &:hover {
+    color: #d3d3d3;
+  }
+}
